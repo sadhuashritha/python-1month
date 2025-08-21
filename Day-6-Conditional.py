@@ -67,3 +67,53 @@ elif year % 4 == 0 and year % 100 != 0:
 else:
     print(False)
 
+#You are given a number a and you have to print your answer according to the following:
+
+# If the number is divisible by 3, you print "Fizz" (without quotes)
+# If the number is divisible by 5, you print "Buzz" (without quotes)
+# If the number is divisible by both 3 and 5, you print "FizzBuzz" (without quotes)
+# In any other case, you print the number itself
+# Note: You should add a new-line character after print statement.
+a = int(input())
+p = "Fizz"
+q = "Buzz"
+r = "FizzBuzz"
+if a % 3 == 0 and a % 5 == 0:
+    print(r)
+elif a % 5 == 0:
+    print(q)
+elif a % 3 == 0:
+    print(p)
+else:
+    print(a)
+
+#Given two numbers a and b. You need to perform basic mathematical operations on them. You will be provided an integer named as operator.
+
+# If the operator equals to 1 add a and b, then print the result.
+# If the operator equals to 2 subtract b from a, then print the result.
+# If the operator equals to 3 multiply a and b, then print the result.
+# If the operator equals to any other number, print "Invalid Input"(without quotes).
+# Note: Do not add a new line at the end.
+
+class Solution:
+    def calculate(self, a: int, b: int, operator: int) -> None:
+        if operator == 1:
+            print(a + b,end="")
+        elif operator == 2:
+            print(a - b,end="")
+        elif operator == 3:
+            print(a * b,end="")
+        else:
+            print("Invalid Index",end="")
+
+#Given a number n, number of apples in a bag. You and your friend are picking one apple turnwise from the bag. It is given that the first attempt is always by you. The person picking the last apple will be the winner. 
+
+# If you will win: print "You" (without quotes)
+# If your friend will win: print "Friend" (without quotes)
+n = int(input())
+if n % 2 == 0:
+    print("Friend")
+else:
+    print("You")
+
+#
