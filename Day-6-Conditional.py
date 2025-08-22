@@ -21,7 +21,7 @@ else:
 # Both a and b are negative and the flag is true.
 # Otherwise, return False.
 class Solution:
-    def checkStatus(self, a, b, flag):
+    def sol(self, a, b, flag):
         if flag == False and ((a > 0 and b < 0) or ( a < 0 and b > 0)) :
             return True
         elif flag == True and (a < 0 and b < 0):
@@ -29,10 +29,10 @@ class Solution:
         else:
             return False
 
-#You are given a string str, you need to return True if  the words "cat" and "hat" appear same number of times in str, otherwise return False.
-def cat_hat(str):  
+#You are given a string str, you need to return True if  the words "cat" and "dog" appear same number of times in str, otherwise return False.
+def animal(str):  
     a=str.count("cat")
-    b=str.count("hat")
+    b=str.count("dog")
     if a==b:
         return True
     else:
@@ -116,4 +116,12 @@ if n % 2 == 0:
 else:
     print("You")
 
-#
+#Input a number and check if it is positive, negative, or zero.
+num = int(input())
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
