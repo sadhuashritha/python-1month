@@ -95,4 +95,9 @@ for i in s:
         res += i
 
 print(res)
-    
+
+#Print the digits of a number in reverse order.
+#Example: 123 → 3 2 1
+n = int(input("Enter a number"))
+for i in range(n,-1):
+    print(i)
