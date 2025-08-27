@@ -52,7 +52,7 @@ print(p.replace("cats","dogs"))
 g = "geeksforgeeks"
 print(g.find("for"))
 
-#Split the string "hello world" into a list of words, and then join them with "-" as a separator.
+# #Split the string "hello world" into a list of words, and then join them with "-" as a separator.
 a = "hello world"
 b = a.split()
 print(b)

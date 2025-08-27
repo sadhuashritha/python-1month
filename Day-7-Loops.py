@@ -24,7 +24,7 @@ for i in set1:
     print(i,end=" "),
 
 #You are given a number N, you need to print its multiplication table.
-N =int(input())
+N =int(input("Enter a number"))
 for i in range(1,11):
     print(N * i, end=" ")
     
