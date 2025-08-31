@@ -78,3 +78,11 @@ print(type(a))
 #Check Data Type Write a program that takes input from the user and prints its data type.
 x = int(input("Enter value of x: "))
 print(type(x))
+
+#Given an integer x, return true if x is a palindrome, and false otherwise.
+
+x = str(input("Enter a Steing"))
+if x == x[::-1]:
+    print(True)
+else:
+    print(False)
