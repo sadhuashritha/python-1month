@@ -102,10 +102,23 @@
 # for i in range(n,-1):
 #     print(i)
 
-#Given an integer n, return true if it is a power of two. Otherwise, return false.
-# An integer n is a power of two, if there exists an integer x such that n == 2x.
-n = int(input("Enter a number: "))
-for i in range(31):
-            if 2**i == n:
-                print(True)
-print(False)
+# #Given an integer n, return true if it is a power of two. Otherwise, return false.
+# # An integer n is a power of two, if there exists an integer x such that n == 2x.
+# n = int(input("Enter a number: "))
+# for i in range(31):
+#             if 2**i == n:
+#                 print(True)
+# print(False)
+
+#Write a function that reverses a string. The input string is given as an array of characters s.
+
+# You must do this by modifying the input array in-place with O(1) extra memory.
+s = list(input("Enter a string(reverse a string)"))
+l = 0
+r = len(s) - 1
+while l < r:
+    s[l],s[r] = s[r],s[l]
+    l+=1
+    r-=1
+s = "".join(s)
+print(s)

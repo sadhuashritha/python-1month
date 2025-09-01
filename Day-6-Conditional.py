@@ -262,3 +262,11 @@ match number:
         print("30 days")
     case 2:
         print("28 or 29 days")
+
+#Given an integer n, return true if it is a power of two. Otherwise, return false.
+# An integer n is a power of two, if there exists an integer x such that n == 2x.
+n = int(input("Enter a number: "))
+for i in range(31):
+            if 2**i == n:
+                print(True)
+print(False)
