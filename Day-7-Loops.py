@@ -112,7 +112,8 @@
 
 #Write a function that reverses a string. The input string is given as an array of characters s.
 
-# You must do this by modifying the input array in-place with O(1) extra memory.
+# You must do this by modifying the input array in-place with O(1) extra memory.4444
+
 s = list(input("Enter a string(reverse a string)"))
 l = 0
 r = len(s) - 1
@@ -122,3 +123,10 @@ while l < r:
     r-=1
 s = "".join(s)
 print(s)
+
+#You are given a string. Split the string on a " " (space) delimiter and join using a - hyphen.
+line = "This is a string"
+line = line.split(" ")
+print(line)
+line = "-".join(line)
+print(line) 
