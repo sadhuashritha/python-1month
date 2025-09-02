@@ -142,13 +142,32 @@
 # line = "-".join(line)
 # print(line) 
 
-# Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
-nums = list(map(int,input("Enter a array").split()))
-nums.sort()
-n=len(nums)
-for i in range(0,n-1,2):
-    if(nums[i]!=nums[i+1]):
-        print(nums[i]) 
-        
-else:
-    print(nums[n-1])
+# # Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+# nums = list(map(int,input("Enter a array").split()))
+# nums.sort()
+# n=len(nums)
+# for i in range(0,n-1,2):
+#     if(nums[i]!=nums[i+1]):
+#         print(nums[i]) 
+#         break
+# else:
+#     print(nums[n-1])
+
+# Given an integer n, return a string array answer (1-indexed) where:
+
+# answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+# answer[i] == "Fizz" if i is divisible by 3.
+# answer[i] == "Buzz" if i is divisible by 5.
+# answer[i] == i (as a string) if none of the above conditions are true.
+n=int(input("Enter a number"))
+result = []
+for i in range(1,n+1):
+    if i % 3 == 0 and i % 5 == 0:
+        result.append("FizzBuzz")
+    elif i % 3 == 0:
+        result.append("Fizz")
+    elif i % 5 == 0:
+        result.append("Buzz")
+    else:
+        result.append(str(i))
+print(result)
