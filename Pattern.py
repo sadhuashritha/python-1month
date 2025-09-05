@@ -146,22 +146,22 @@
 
 # print()
 
+# n=5
+#       A 
+#      A B
+#     A B C
+#    A B C D
+#   A B C D E
 n = 5
 alpha = 65
 for i in range(0,n):
+    # for j in range(n-i):
     print(" " * (n-i), end=" ")
+        # print(" ",end=" ")
     for j in range(0,i+1):
         print(chr(alpha),end=" ")
         alpha+=1
     alpha = 65
     print()
 
-# n = 5
-# alph = 65
-# for i in range(0, n):
-#     print(" " * (n-i), end=" ")
-#     for j in range(0, i+1):
-#         print(chr(alph), end=" ")
-#         alph += 1
-#     alph = 65
-#     print()
+
