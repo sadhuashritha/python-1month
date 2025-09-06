@@ -114,6 +114,13 @@ for i in range(1,n+1):
 
 print()
 
+# 
+#           A
+#         A B C
+#       A B C D E
+#     A B C D E F G
+#   A B C D E F G H I 
+# A B C D E F G H I J K
 n = 6
 sum = 0
 alph = 65
@@ -128,6 +135,19 @@ for i in range(1,n+1):
 
 print()
 
+n = 6
+sum = 0
+alph = 65
+for i in range(1,n+1):
+    for j in range(n-i):
+        print(" ",end=" ")
+    for k in range((2*i) - 1):
+        print(k,end=" ")
+        alph += 1
+    alph = 65
+    print()
+
+print()
 
 
 # Input: n = 5
