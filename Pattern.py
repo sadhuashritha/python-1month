@@ -114,6 +114,22 @@ for i in range(1,n+1):
 
 print()
 
+n = 6
+sum = 0
+alph = 65
+for i in range(1,n+1):
+    for j in range(n-i):
+        print(" ",end=" ")
+    for k in range((2*i) - 1):
+        print(chr(alph),end=" ")
+        alph += 1
+    alph = 65
+    print()
+
+print()
+
+
+
 # Input: n = 5
 # Output:
 # 1
