@@ -270,3 +270,9 @@ for i in range(31):
             if 2**i == n:
                 print(True)
 print(False)
+
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    print()

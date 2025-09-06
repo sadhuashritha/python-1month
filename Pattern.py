@@ -17,7 +17,7 @@ print()
 # 1 2 3
 # 1 2 3 4
 # 1 2 3 4 5
-
+n = 5
 for i in range(1,n+1):
     for j in range(1,i+1):
         print(j,end=" ")
@@ -25,13 +25,32 @@ for i in range(1,n+1):
 
 print()
 
-
+# 1
+# 2 2 
+# 3 3 3`    `
+# 4 4 4 4
+# 5 5 5 5 5
+n = 5
 for i in range(1,n+1):
     for j in range(1,i+1):
         print(i,end=" ")
     print()
-
 print()
+
+# A
+# B C
+# D E F 
+# G H I J
+# K L M N O
+n = 5
+alph = 65
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(chr(alph),end=" ")
+        alph += 1
+    print()
+print()
+
 # Input: n = 5
 # Output:
 # *****
@@ -47,6 +66,34 @@ for i in range(n,0,-1):
     print()
 
 print()
+
+# 01234
+# 0123
+# 012
+# 01
+# 0
+n = 5
+for i in range(n,0,-1):
+    for j in range(i):
+        print(j,end=" ")
+    print()
+print()
+
+# 55555
+# 4444
+# 333
+# 22
+# 1
+
+n = 5
+for i in range(n,0,-1):
+    for j in range(i):
+        print(i,end=" ")
+    print()
+print()
+
+
+
 
 # Input: n = 5
 # Output:
