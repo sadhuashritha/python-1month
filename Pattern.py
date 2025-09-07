@@ -316,6 +316,7 @@ for i in range(1,n+1):
     print()
 
 print() 
+
 # 1 1 1 1 1
 # 2 2 2 2 2
 # 3 3 3 3 3
@@ -327,16 +328,5 @@ for i in range(1,n+1):
         print(i,end=" ")
     print()
 
-print()
-# 1 2 3 4 5
-# 1 2 3 4 5
-# 1 2 3 4 5
-# 1 2 3 4 5
-# 1 2 3 4 5
-n = 5
-for i in range(1,n+1):
-    for j in range(n):
-        print(j+1,end=" ")
-    print()
 print()
 
