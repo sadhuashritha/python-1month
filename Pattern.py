@@ -218,15 +218,15 @@ print()
 
 
 # n=5
-#         * 
-#       * * *
-#     * * * * *
-#   * * * * * * * 
-# * * * * * * * * *
-#   * * * * * * * 
-#     * * * * *
-#       * * *
-#         *
+#         1
+#       2 2 2
+#     3 3 3 3 3
+#   4 4 4 4 4 4 4
+# 5 5 5 5 5 5 5 5 5 
+#   4 4 4 4 4 4 4
+#     3 3 3 3 3
+#       2 2 2
+#         1
 
 n = 5
 for i in range(1,n+1):
@@ -291,6 +291,33 @@ for i in range(mid-1,0,-1):
     for j in range(1,n+1):
         if j==i or j == (n-i) + 1:
             print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+print()
+
+
+# n=5
+# *   *
+#  * * 
+#   *  
+#  * * 
+# *   *
+n = 5
+mid = (n+1)//2
+for i in range(1,mid+1):
+    for j in range(1,n+1):
+        if j == i or j == (n-i) + 1:
+            print(i,end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+for i in range(mid-1,0,-1):
+    for j in range(1,n+1):
+        if j==i or j == (n-i) + 1:
+            print(i,end=" ")
         else:
             print(" ",end=" ")
     print()
