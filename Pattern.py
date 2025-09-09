@@ -298,12 +298,12 @@ for i in range(mid-1,0,-1):
 print()
 
 
-# n=5
-# *   *
-#  * * 
-#   *  
-#  * * 
-# *   *
+# 1       1 
+#   2   2
+#     3
+#   2   2
+# 1       1 
+
 n = 5
 mid = (n+1)//2
 for i in range(1,mid+1):
@@ -340,6 +340,21 @@ for i in range(1,n+1):
         print(chr(alpha),end=" ")
         alpha+=1
     alpha = 65
+    print()
+
+# n=5
+#       A 
+#      A B
+#     A B C
+#    A B C D
+#   A B C D E
+n = 5
+for i in range(1,n+1):
+    print(" " * (n-i), end=" ")
+    # for j in range(n-i):
+        # print(" ",end=" ")
+    for j in range(1,i+1):
+        print(i,end=" ")
     print()
 
 # # n = 5
