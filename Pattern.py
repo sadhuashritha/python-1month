@@ -480,26 +480,19 @@ for i in range(1,n+1):
     print()
 print()
 
-# * * * * * 
-#   *   *
-#     *
-#   *   *
-# * * * * *
+# 1 2 3 4 5
+#   2   4
+#     3
+#   2   4
+# 1 2 3 4 5
 
-
-n = 5 
-for i in range(n):
-    for j in range(n):
-        if i == 0 or j == i or j == n - i - 1:
-            print("*", end=" ")
+n = 5
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i == 1 or i == n or i == j or j == n-i+1:
+            print(j,end=" ")
         else:
-            print(" ", end=" ")
+            print(" " ,end=" ")
     print()
+print()
 
-for i in range(n - 2, -1, -1):
-    for j in range(n):
-        if i == 0 or j == i or j == n - i - 1:
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
-    print()
