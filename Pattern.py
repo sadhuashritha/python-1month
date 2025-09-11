@@ -412,44 +412,57 @@
 # print()
 
 
-# * * * * * 
-# *       *
-# *       *
-# *       *
-# * * * * *
-n = 5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i==1 or i == n or j==1 or j == n :
-            print("*",end=" ")
-        else:
-            print(" ",end=" ")
-    print()
+# # * * * * * 
+# # *       *
+# # *       *
+# # *       *
+# # * * * * *
+# n = 5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i==1 or i == n or j==1 or j == n :
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
 
-# 1 1 1 1 1
-# 2       2
-# 3       3
-# 4       4
-# 5 5 5 5 5 
-n = 5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i==1 or i == n or j==1 or j == n :
-            print(i,end=" ")
-        else:
-            print(" ",end=" ")
-    print()
+# # 1 1 1 1 1
+# # 2       2
+# # 3       3
+# # 4       4
+# # 5 5 5 5 5 
+# n = 5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i==1 or i == n or j==1 or j == n :
+#             print(i,end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
 
-# 1 2 3 4 5
-# 1       5
-# 1       5
-# 1       5
-# 1 2 3 4 5
+# # 1 2 3 4 5
+# # 1       5
+# # 1       5
+# # 1       5
+# # 1 2 3 4 5
+# n = 5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i==1 or i == n or j==1 or j == n :
+#             print(j,end=" ")
+#         else:
+#             print(" ",end=" ")
+#     print()
+
+
+#      * * * * * 
+#     * * * * *
+#    * * * * *
+#   * * * * *
+#  * * * * *
 n = 5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i==1 or i == n or j==1 or j == n :
-            print(j,end=" ")
-        else:
-            print(" ",end=" ")
-    print()
+for i in range(n):
+    print(" " * (n-i-1),end=" ")
+    print("* " * n)
+
+
