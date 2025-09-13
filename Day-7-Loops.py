@@ -172,10 +172,3 @@ for i in range(1,n+1):
         result.append(str(i))
 print(result)
 
-# Find Numbers with Even Number of Digits
-nums = [12,345,2,6,7896]
-count = 0
-for i in range(len(nums)):
-    if len(str(nums[i])) % 2 == 0:
-        count += 1
-print(count)
