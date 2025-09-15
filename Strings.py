@@ -36,3 +36,8 @@ print(str.swapcase())
 s = "ABCddE"
 print(s.lower())
 print(s.upper())
+
+# Given a valid (IPv4) IP address, return a defanged version of that IP address.
+# A defanged IP address replaces every period "." with "[.]".
+address = "1.1.1.1"
+print(address.replace('.','[.]'))
