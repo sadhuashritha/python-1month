@@ -32,3 +32,7 @@ print(str.find(x))
 print(str.title())
 print(str.swapcase())
 
+# Given a string s. The task is to convert string characters to lowercase and uppercase.
+s = "ABCddE"
+print(s.lower())
+print(s.upper())
