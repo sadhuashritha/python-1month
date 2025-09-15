@@ -20,3 +20,15 @@ else:
 
 print(short + longer + short)
 
+# Python has a lot of string methods that can be used to manipulate the strings like converting to lowercase, capitalizing, trimming the spaces and so on.
+
+# In this question, we'll take a look at inbuilt string methods like title(), swapcase(), find(), strip().
+# You'll be given a string str and x, you'll perform various operations on them.
+
+str = "hello" 
+x = "llo"
+print(str.strip())
+print(str.find(x))
+print(str.title())
+print(str.swapcase())
+
