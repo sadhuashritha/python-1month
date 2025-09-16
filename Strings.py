@@ -41,3 +41,13 @@ print(s.upper())
 # A defanged IP address replaces every period "." with "[.]".
 address = "1.1.1.1"
 print(address.replace('.','[.]'))
+
+# Given a string s which may contain lowercase and uppercase characters. The task is to remove all duplicate characters from the string and find the resultant string.
+#  The order of remaining characters in the output should be same as in the original string.
+s = "geEksforGEeks"
+res = []
+for char in s:
+	if char not in res:
+	    res.append(char)
+print("".join(res))
+	       
