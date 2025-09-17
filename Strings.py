@@ -51,4 +51,30 @@ for char in s:
 	    res.append(char)
 print("".join(res))
 	       
-##
+#Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.
+# A string is represented by an array if the array elements concatenated in order forms the string.
+word1 = ["ab", "c"]
+word2 = ["a", "bc"]
+word1 = "".join(word1)
+word2 = "".join(word2)
+print(word1 == word2)
+
+# Balanced strings are those that have an equal quantity of 'L' and 'R' characters.
+# Given a balanced string s, split it into some number of substrings such that:
+# Each substring is balanced.
+# Return the maximum number of balanced strings you can obtain.
+# Example 1:
+# Input: s = "RLRRLLRLRL"
+# Output: 4
+
+R = 0
+L = 0
+res = 0
+for i in s:
+    if i == "L":
+        L += 1
+    else:
+        R += 1
+    if L == R:
+        res += 1
+print(res) 
