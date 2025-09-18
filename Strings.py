@@ -64,9 +64,9 @@ print(word1 == word2)
 # Each substring is balanced.
 # Return the maximum number of balanced strings you can obtain.
 # Example 1:
-# Input: s = "RLRRLLRLRL"
+# Input: s = "RLRRLLRLRL" ---> RL  RRLL RL RL
 # Output: 4
-
+s = "RLRRLLRLRL"
 R = 0
 L = 0
 res = 0
@@ -77,4 +77,27 @@ for i in s:
         R += 1
     if L == R:
         res += 1
+print(res) 
+
+# You are given a string s formed by digits and '#'. We want to map s to English lowercase characters as follows:
+# Characters ('a' to 'i') are represented by ('1' to '9') respectively.
+# Characters ('j' to 'z') are represented by ('10#' to '26#') respectively.
+# Return the string formed after mapping.
+# Example 1:
+# Input: s = "10#11#12"
+# Output: "jkab"
+# Explanation: "j" -> "10#" , "k" -> "11#" , "a" -> "1" , "b" -> "2".
+
+s = "10#11#12"
+i = 0
+res = ""
+while i < len(s):
+    if i + 2 < len(s) and s[i + 2] == "#":
+        num = int(s[i:i+2])
+        res += chr(num + 96)
+        i+=3
+    else:
+        num = int(s[i])
+        res += chr(num + 96)
+        i+=1
 print(res) 
