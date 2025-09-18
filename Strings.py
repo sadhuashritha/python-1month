@@ -101,4 +101,3 @@ while i < len(s):
         res += chr(num + 96)
         i+=1
 print(res) 
-# ++=+
