@@ -133,3 +133,10 @@ print("con: " , con)
 
 
 # Reverse a String. Take a string input and print it in reverse without using built-in reverse functions.
+a = "ashritha"
+b = []
+for i in range(len(a)-1,-1,-1):
+    b.append(a[i])
+print("".join(b))
+
+# Check Palindrome. Write a program to check if a string reads the same forward and backward.
