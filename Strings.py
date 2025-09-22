@@ -159,3 +159,6 @@ for i in a:
     else:
         res += i
 print(res)
+
+a = "  ashritha  "
+print(a.strip())
