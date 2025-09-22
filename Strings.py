@@ -141,11 +141,21 @@ a = "ashritha"
 b = a[::-1]
 print(b)
 # Check Palindrome. Write a program to check if a string reads the same forward and backward.
-a = "wowaa"
+a = "wow"
 b = a[::-1]
 if a == b:
     print("palindrome")
 else:
     print("not a palindrome")
 
-
+# Toggle Case  Convert uppercase letters to lowercase and lowercase letters to uppercase in a string.
+a="AsHrItHa"
+res = ""
+for i in a:
+    if i.islower():
+        res += i.upper()
+    elif i.isupper():
+        res += i.lower()
+    else:
+        res += i
+print(res)
