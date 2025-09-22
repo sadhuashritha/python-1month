@@ -140,3 +140,7 @@ for i in range(len(a)-1,-1,-1):
 print("".join(b))
 
 # Check Palindrome. Write a program to check if a string reads the same forward and backward.
+
+
+
+
