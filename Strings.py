@@ -160,5 +160,13 @@ for i in a:
         res += i
 print(res)
 
+# Remove Spaces Remove all spaces from a string.
 a = "  ashritha  "
 print(a.strip())
+
+a = "2as54ty8"
+count = 0
+for i in a:
+    if i.isdigit():
+        count += 1
+print(count)
