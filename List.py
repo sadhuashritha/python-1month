@@ -26,3 +26,10 @@ for i in range(len(arr)):
     arr[i] -= 1
 print(arr)
 
+# You are given three inputs a, b, c. You need to create a list and append a, b, c to the list and then return that list.
+a,b,c = 1,2,3
+list=[]
+list.append(a)
+list.append(b)
+list.append(c)
+print(list) 
