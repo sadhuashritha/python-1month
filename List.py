@@ -57,3 +57,10 @@ ans = []
 for i in range(len(nums)):
     ans.append(nums[nums[i]])
 print(ans)
+
+# Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+# Return the running sum of nums.
+sum = 0
+for i in range(1,len(nums)):
+    nums[i] = nums[i-1] + nums[i]
+print(nums)
