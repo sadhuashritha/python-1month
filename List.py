@@ -78,3 +78,17 @@ for i in operations:
     else:
         X -= 1
 print(X)
+
+
+# You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the ith customer has in the jth bank. Return the wealth that the richest customer has.
+# A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the customer that has the maximum wealth.
+
+accounts = [[1,2,3],[3,2,1]]
+max1 = 0
+for i in range(len(accounts)):
+    ans = 0
+    for j in accounts[i]:
+        ans += j 
+    if ans > max1:
+        max1 = ans
+print(max1)
