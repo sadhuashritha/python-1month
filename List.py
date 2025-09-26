@@ -124,13 +124,3 @@ for i in range(len(candies)):
         ans.append(False)
 print(ans)
 
-nums = [2,5,1,3,4,7]
-n = 3
-res = []
-        # for i,j in zip(p1,p2):
-        #     res.extend([i,j])
-        # return res
-for i in range(n):
-    res.append(nums[i])
-    res.append(nums[i+n])
-print(res)
