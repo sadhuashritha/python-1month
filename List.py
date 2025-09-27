@@ -1,4 +1,4 @@
-# GFG   You are given a list that contains integers. You need to print the elements of the list with a space between them.
+ji# GFG   You are given a list that contains integers. You need to print the elements of the list with a space between them.
 # Note: Do not add a new line at the end.
 arr = [54, 43, 2, 1, 5]
 for i in arr:
@@ -135,16 +135,3 @@ for i in range(n):
     res.append(nums[i+n])
 print(res)
 
-nums = [2,5,1,3,4,7]
- n = 3
-ans = []
-        # for i in range(n):
-        #     ans.append(nums[i])
-        #     ans.append(nums[i+n])
-        # return ans
- n1 = nums[:n]
- n2 = nums[n:]
- for i,j in zip(n1,n2):
-      ans.append(i)
-      ans.append(j)
- print(ans)
