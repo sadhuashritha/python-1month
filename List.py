@@ -134,3 +134,17 @@ for i in range(n):
     res.append(nums[i])
     res.append(nums[i+n])
 print(res)
+
+nums = [2,5,1,3,4,7]
+ n = 3
+ans = []
+        # for i in range(n):
+        #     ans.append(nums[i])
+        #     ans.append(nums[i+n])
+        # return ans
+ n1 = nums[:n]
+ n2 = nums[n:]
+ for i,j in zip(n1,n2):
+      ans.append(i)
+      ans.append(j)
+ print(ans)
