@@ -135,3 +135,13 @@ for i in range(n):
     res.append(nums[i+n])
 print(res)
 
+logs = [[1993,1999],[2000,2010]]
+count = [0] * 2050
+        for birth,death in logs:
+            for i in range(birth,death):
+                count[i] += 1
+
+        maxpop = max(count)
+        for i in range(1950,2050):
+            if count[i] == maxpop:
+                print(i)
