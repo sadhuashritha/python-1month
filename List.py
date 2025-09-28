@@ -1,4 +1,4 @@
-ji# GFG   You are given a list that contains integers. You need to print the elements of the list with a space between them.
+# GFG   You are given a list that contains integers. You need to print the elements of the list with a space between them.
 # Note: Do not add a new line at the end.
 arr = [54, 43, 2, 1, 5]
 for i in arr:
@@ -135,14 +135,17 @@ for i in range(n):
     res.append(nums[i+n])
 print(res)
 
+# 1854. Maximum Population Year
+# You are given a 2D integer array logs where each logs[i] = [birthi, deathi] indicates the birth and death years of the ith person.
+# The population of some year x is the number of people alive during that year. The ith person is counted in year x's population if x is in the inclusive range [birthi, deathi - 1]. Note that the person is not counted in the year that they die.
+# Return the earliest year with the maximum population.
 logs = [[1993,1999],[2000,2010]]
 count = [0] * 2050
-        for birth,death in logs:
-            for i in range(birth,death):
-                count[i] += 1
+for birth,death in logs:
+    for i in range(birth,death):
+        count[i] += 1
 
-        maxpop = max(count)
-        for i in range(1950,2050):
-            if count[i] == maxpop:
-                print(i)
-
+maxpop = max(count)
+for i in range(1950,2050):
+    if count[i] == maxpop:
+print(i)
