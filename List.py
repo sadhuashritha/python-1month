@@ -124,16 +124,22 @@ for i in range(len(candies)):
         ans.append(False)
 print(ans)
 
+# 1470. Shuffle the Array
+# Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
+# Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 nums = [2,5,1,3,4,7]
 n = 3
-res = []
-        # for i,j in zip(p1,p2):
-        #     res.extend([i,j])
-        # return res
-for i in range(n):
-    res.append(nums[i])
-    res.append(nums[i+n])
-print(res)
+ans = []
+# for i in range(n):
+#     ans.append(nums[i])
+#     ans.append(nums[i+n])
+# print(ans)
+n1 = nums[:n]
+n2 = nums[n:]
+for i,j in zip(n1,n2):
+    ans.append(i)
+    ans.append(j)
+print(ans)
 
 # 1854. Maximum Population Year
 # You are given a 2D integer array logs where each logs[i] = [birthi, deathi] indicates the birth and death years of the ith person.
