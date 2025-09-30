@@ -288,6 +288,13 @@ for i in range(2,n+1):
     a,b=b,a+b
 print(b)
 
+# 67. Add Binary
+# Given two binary strings a and b, return their sum as a binary string.
+a = "11"
+b = "1"
+num1 = int(a,2)
+num2 = int(b,2)
+print(bin(num1 + num2)[2:])
 
 
 
