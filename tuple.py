@@ -33,4 +33,6 @@ print(tup3)
 
 # Repeat the tuple (‘a’, ‘b’) three times.
 tup = ('a','b') 
-print(tup * 3)
+print(tup * 3)# Find the length of tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
+tup = ('apple', 'banana', 'cherry', 'apple')
+print(len(tup))
