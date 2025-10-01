@@ -44,3 +44,9 @@ for i in tup:
     if i == 'apple':
         count += 1
 print(count)
+
+# Find the index of 'cherry' in the tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
+tup = ('apple', 'banana', 'cherry', 'apple')
+for i in range(len(tup)):
+    if tup[i] == 'cherry':
+        print(i)
