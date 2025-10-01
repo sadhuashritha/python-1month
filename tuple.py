@@ -13,3 +13,9 @@ tup1 = ("Ashritha",30,50.68,True)
 for i in tup1:
     print(type(i))
 print(tup1)
+
+# Check if the number 25 exists in the tuple (10, 20, 25, 30, 35)
+tup = (10, 20, 25, 30, 35)
+for i in tup:
+    if i == 25:
+        print("exits")
