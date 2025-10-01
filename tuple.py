@@ -24,3 +24,9 @@ for i in tup:
 li = [1, 2, 3, 4, 5]
 tup2 = tuple(li)
 print(tup2)
+
+# Concatenate two tuples (1,2,3) and (4,5,6) into one tuple.
+tup1 = (1,2,3)
+tup2 = (4,5,6)
+tup3 = tup1 + tup2
+print(tup3)
