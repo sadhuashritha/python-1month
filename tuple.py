@@ -36,3 +36,11 @@ tup = ('a','b')
 print(tup * 3)# Find the length of tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
 tup = ('apple', 'banana', 'cherry', 'apple')
 print(len(tup))
+
+# Count how many times 'apple' appears in the tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
+tup = ('apple', 'banana', 'cherry', 'apple')
+count = 0
+for i in tup:
+    if i == 'apple':
+        count += 1
+print(count)
