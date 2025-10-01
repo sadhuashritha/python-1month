@@ -19,3 +19,8 @@ tup = (10, 20, 25, 30, 35)
 for i in tup:
     if i == 25:
         print("exits")
+
+# Convert the list [1, 2, 3, 4, 5] into a tuple.
+li = [1, 2, 3, 4, 5]
+tup2 = tuple(li)
+print(tup2)
