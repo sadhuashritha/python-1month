@@ -24,3 +24,31 @@ for i in tup:
 li = [1, 2, 3, 4, 5]
 tup2 = tuple(li)
 print(tup2)
+
+# Concatenate two tuples (1,2,3) and (4,5,6) into one tuple.
+tup1 = (1,2,3)
+tup2 = (4,5,6)
+tup3 = tup1 + tup2
+print(tup3)
+
+# Repeat the tuple (‘a’, ‘b’) three times.
+tup = ('a','b') 
+print(tup * 3)
+
+# Find the length of tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
+tup = ('apple', 'banana', 'cherry', 'apple')
+print(len(tup))
+
+# Count how many times 'apple' appears in the tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
+tup = ('apple', 'banana', 'cherry', 'apple')
+count = 0
+for i in tup:
+    if i == 'apple':
+        count += 1
+print(count)
+
+# Find the index of 'cherry' in the tuple (‘apple’, ‘banana’, ‘cherry’, ‘apple’).
+tup = ('apple', 'banana', 'cherry', 'apple')
+for i in range(len(tup)):
+    if tup[i] == 'cherry':
+        print(i)
