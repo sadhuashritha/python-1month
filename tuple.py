@@ -75,3 +75,8 @@ print("I",name,"of age",age,"studying",branch,"at MRU")
 # Given a tuple of tuples ((1,2), (3,4), (5,6)), access the element 4.
 tup = ((1,2), (3,4), (5,6))
 print(tup[1][1])
+
+# From the tuple ((10, 20), (30, 40), (50, 60)), print all first elements (10, 30, 50)
+tup = ((10, 20), (30, 40), (50, 60))
+for i in tup:
+    print(i[0])
