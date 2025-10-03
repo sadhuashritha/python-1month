@@ -114,3 +114,8 @@ if tup == tup1:
     print("Tuples are identical")
 else:
     print("tuples are not identical")
+
+# You have a list of student marks as tuples [("John", 85), ("Alice", 92), ("Bob", 78)]. Sort them by marks.
+tup = [("John", 85), ("Alice", 92), ("Bob", 78)]
+ans = sorted(tup,key=lambda x : x[1])
+print(ans)
