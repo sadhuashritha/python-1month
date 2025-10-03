@@ -71,3 +71,7 @@ print(b)
 tup = ("Ashritha", 21, "CSE")
 name,age,branch = tup
 print("I",name,"of age",age,"studying",branch,"at MRU")
+
+# Given a tuple of tuples ((1,2), (3,4), (5,6)), access the element 4.
+tup = ((1,2), (3,4), (5,6))
+print(tup[1][1])
