@@ -52,3 +52,10 @@ tup = ('apple', 'banana', 'cherry', 'apple')
 for i in range(len(tup)):
     if tup[i] == 'cherry':
         print(i)
+
+# Given a tuple (10, 20, 30), unpack it into variables a, b, c. Print each variable.
+tup = (10, 20, 30)
+a,b,c = tup
+print(a)
+print(b)
+print(c)
