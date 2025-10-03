@@ -80,3 +80,11 @@ print(tup[1][1])
 tup = ((10, 20), (30, 40), (50, 60))
 for i in tup:
     print(i[0])
+
+# Create a nested tuple for student details: ("John", (85, 90, 78)). Print the average marks.
+tup = ("John", (85, 90, 78))
+student = tup[0]
+marks = tup[1]
+avg = sum(marks)/ len(student)
+print("student" , student)
+print("total marks",avg)
