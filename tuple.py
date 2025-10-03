@@ -105,3 +105,12 @@ for i in tup:
         max = i
 print(min)
 print(max)
+
+# Write a program to check if two tuples (1,2,3) and (1,2,3) are identical.
+tup = (1,2,3)
+tup1 = (1,2,3)
+
+if tup == tup1:
+    print("Tuples are identical")
+else:
+    print("tuples are not identical")
