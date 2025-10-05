@@ -69,3 +69,8 @@ a,b = b,a
 print(a)
 print(b)
 
+
+# Unpack the tuple (“Ashritha”, 21, “CSE”) into name, age, branch. Print a sentence using them.
+tup = ("Ashritha", 21, "CSE")
+name,age,branch = tup
+print("I",name,"of age",age,"studying",branch,"at MRU")
