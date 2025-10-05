@@ -62,5 +62,10 @@ print(b)
 print(c)
 
 
-
+# Swap two numbers using tuple unpacking.
+tup = (10, 20)
+a,b = tup
+a,b = b,a
+print(a)
+print(b)
 
