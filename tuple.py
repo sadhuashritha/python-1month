@@ -97,3 +97,16 @@ print("total marks",avg
 tup = ("red", "green", "blue")
 for i in range(len(tup)):
     print(i,tup[i])
+
+# Find the maximum and minimum in the tuple (45, 67, 23, 89, 12)
+tup = (45, 67, 23, 89, 12)
+min = tup[0]
+max = tup[0]
+for i in tup:
+    if i <= min:
+        min = i
+    elif i >= max:
+        max = i
+print(min)
+print(max)
+
