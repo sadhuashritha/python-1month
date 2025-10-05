@@ -53,6 +53,7 @@ for i in range(len(tup)):
     if tup[i] == 'cherry':
         print(i)
 
+
 # Given a tuple (10, 20, 30), unpack it into variables a, b, c. Print each variable.
 tup = (10, 20, 30)
 a,b,c = tup
@@ -60,77 +61,6 @@ print(a)
 print(b)
 print(c)
 
-# Swap two numbers using tuple unpacking.
-tup = (10, 20)
-a,b = tup
-a,b = b,a
-print(a)
-print(b)
-
-# Unpack the tuple (“Ashritha”, 21, “CSE”) into name, age, branch. Print a sentence using them.
-tup = ("Ashritha", 21, "CSE")
-name,age,branch = tup
-print("I",name,"of age",age,"studying",branch,"at MRU")
-
-# Given a tuple of tuples ((1,2), (3,4), (5,6)), access the element 4.
-tup = ((1,2), (3,4), (5,6))
-print(tup[1][1])
-
-# From the tuple ((10, 20), (30, 40), (50, 60)), print all first elements (10, 30, 50)
-tup = ((10, 20), (30, 40), (50, 60))
-for i in tup:
-    print(i[0])
-
-# Create a nested tuple for student details: ("John", (85, 90, 78)). Print the average marks.
-tup = ("John", (85, 90, 78))
-student = tup[0]
-marks = tup[1]
-avg = sum(marks)/ len(student)
-print("student" , student)
-print("total marks",avg)
-
-# Iterate through tuple (‘red’, ‘green’, ‘blue’) and print each element with its index.
-tup = ("red", "green", "blue")
-for i in range(len(tup)):
-    print(i,tup[i])
-
-# Find the maximum and minimum in the tuple (45, 67, 23, 89, 12)
-tup = (45, 67, 23, 89, 12)
-min = tup[0]
-max = tup[0]
-for i in tup:
-    if i <= min:
-        min = i
-    elif i >= max:
-        max = i
-print(min)
-print(max)
-
-# Write a program to check if two tuples (1,2,3) and (1,2,3) are identical.
-tup = (1,2,3)
-tup1 = (1,2,3)
-
-if tup == tup1:
-    print("Tuples are identical")
-else:
-    print("tuples are not identical")
-
-# You have a list of student marks as tuples [("John", 85), ("Alice", 92), ("Bob", 78)]. Sort them by marks.
-tup = [("John", 85), ("Alice", 92), ("Bob", 78)]
-ans = sorted(tup,key=lambda x : x[1])
-print(ans)
 
 
-class Solution:
-    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        ans= []
-        for i in arr2:
-            for j in arr1:
-                if i == j:
-                    ans.append(i)
-
-        for j in sorted(arr1):
-            if j not in arr2:
-                ans.append(j)
-        return ans
 
