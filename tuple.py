@@ -74,3 +74,9 @@ print(b)
 tup = ("Ashritha", 21, "CSE")
 name,age,branch = tup
 print("I",name,"of age",age,"studying",branch,"at MRU")
+
+
+# From the tuple ((10, 20), (30, 40), (50, 60)), print all first elements (10, 30, 50)
+tup = ((10, 20), (30, 40), (50, 60))
+for i in tup:
+    print(i[0])
