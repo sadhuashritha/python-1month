@@ -91,4 +91,9 @@ student = tup[0]
 marks = tup[1]
 avg = sum(marks)/ len(student)
 print("student" , student)
-print("total marks",avg)
+print("total marks",avg
+
+# Iterate through tuple (‘red’, ‘green’, ‘blue’) and print each element with its index.
+tup = ("red", "green", "blue")
+for i in range(len(tup)):
+    print(i,tup[i])
