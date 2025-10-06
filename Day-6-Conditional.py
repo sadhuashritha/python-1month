@@ -311,3 +311,18 @@ for i in range(1,x+1):
 print(0)
 
 
+# 136. Single Number
+# Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+# You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+nums = [2,2,1]
+for i in range(len(nums)):
+    count = 0
+    for j in range(len(nums)):
+        if nums[i] == nums[j]:
+            count += 1
+            if count > 1:
+                break
+    if count == 1:
+        print(nums[i])
+
