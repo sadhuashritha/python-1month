@@ -179,3 +179,14 @@ for i in range(len(nums)):
     if len(str(nums[i])) % 2 == 0:
         count += 1
 print(count)
+
+# 258. Add Digits
+# Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+num = 38
+while num >= 10:
+    sumdi = 0
+    while num > 0:
+        sumdi += num % 10
+        num //= 10
+    num += sumdi
+print(num)
