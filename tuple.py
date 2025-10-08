@@ -162,3 +162,17 @@ index = list(range(len(mat)))
 index.sort(key = lambda x : ans[x])
 print(index[:k])
 
+# 242. Valid Anagram
+# Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+s = "anagram"
+t = "nagaram"
+if len(s) != len(t):
+    print(False)
+for i in s:
+    if i not in t:
+        print(False) 
+    else:
+        t = t.replace(i,"",1)
+print(True)
+
