@@ -177,4 +177,17 @@ for i in s:
 print(True)
 
 
-
+# 1636. Sort Array by Increasing Frequency
+# Given an array of integers nums, sort the array in increasing order based on the frequency of the values. If multiple values have the same frequency, sort them in decreasing order.
+# Return the sorted array.
+nums = [1,1,2,2,2,3]
+ans = []
+for i in range(len(nums)):
+    count = 0
+    for j in range(len(nums)):
+        if nums[i] == nums[j]:
+            count += 1
+    ans.append((count))
+freq = list(range(len(nums)))
+freq.sort(key = lambda x : (ans[x], -nums[x]))
+return [nums[i] for i in freq]
