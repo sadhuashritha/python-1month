@@ -229,4 +229,8 @@ tup = [20,"ashritha",True,50.0,60,"lisa"]
 a = len(tup)
 print(a)
 
-
+# Check whether the number 50 exists in the tuple (10, 20, 30, 40, 50, 60).
+tup = [10,20,30,40,50,60]
+for i in tup:
+    if i == 50:
+        print("Exists")
