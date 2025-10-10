@@ -224,3 +224,9 @@ ans.sort(key = lambda x : (x[1],x[0]))
 return [x[0] for x in ans[:k]]
 
 
+# Create a tuple with 6 elements of different data types. Print its length.
+tup = [20,"ashritha",True,50.0,60,"lisa"]
+a = len(tup)
+print(a)
+
+
