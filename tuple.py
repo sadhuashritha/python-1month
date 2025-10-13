@@ -261,3 +261,15 @@ t = "abcde"
 for i in t:
     if t.count(i) != s.count(i):
         print(i)
+
+# 383. Ransom Note
+# Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
+# Each letter in magazine can only be used once in ransomNote.
+ransomNote = "a"
+magazine = "b"
+for i in ransomNote:
+    if i in magazine:
+        magazine = magazine.replace(i,"",1)
+    elif i not in magazine:
+        print(False)
+print(True)
