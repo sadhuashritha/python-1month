@@ -245,3 +245,9 @@ print(a)
 tup = [1,2,3]
 print(tup * 5)
 
+
+# Given a tuple (10, 20, 30, 40, 50), find the index of element 40.
+tup = [10,20,30,40,50]
+for i in range(len(tup)):
+    if tup[i] == 40:
+        print(i)
