@@ -241,5 +241,7 @@ a = list(tup)
 a[1] = 99
 print(a)
 
-
+# Write a program to repeat the tuple (1, 2, 3) five times using repetition operator.
+tup = [1,2,3]
+print(tup * 5)
 
