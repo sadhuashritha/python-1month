@@ -289,3 +289,11 @@ for i in range(len(nums)):
             ans.append(j)
             print(ans)
 print(False)
+
+# Given a tuple of strings ("apple", "banana", "grape", "kiwi"), print only the words that have more than 5 letters.
+tup = ["apples", "banana", "grape", "kiwi"]
+count = 0
+for i in tup:
+    if len(i) > 5:
+        print(i,end=" ")
+print("")
