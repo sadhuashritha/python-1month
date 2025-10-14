@@ -298,3 +298,9 @@ for i in tup:
         print(i,end=" ")
 print("")
 
+# From the tuple (1, 2, 3, 4, 5, 6, 7, 8, 9), print only alternate elements.
+tup = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+for i in range(0,len(tup),2):
+    print(tup[i],end=" ")
+print("")
+
