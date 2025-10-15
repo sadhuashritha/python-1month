@@ -33,3 +33,4 @@ student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 for i in student.keys():
     if i == "name":
         print("The key, name exists")
+
