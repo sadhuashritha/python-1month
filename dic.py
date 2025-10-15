@@ -27,3 +27,9 @@ print(student)
 student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 del student["age"]
 print(student)
+
+# Check whether the key "name" exists in a dictionary or not
+student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
+for i in student.keys():
+    if i == "name":
+        print("The key, name exists")
