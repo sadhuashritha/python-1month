@@ -50,3 +50,9 @@ for i in student.values():
 student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 for i,j in student.items():
     print(i,": ",j)
+# Create an empty dictionary and add 3 key-value pairs using assignment (dict[key] = value).
+dict = {}
+dict[1] = "ashritha"
+dict["age"] = 20
+dict["a"] = "Grade A"
+print(dict)
