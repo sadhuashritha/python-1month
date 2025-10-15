@@ -13,3 +13,6 @@ student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 print(student)
 
 
+# How do you access the value of the key "age" from a dictionary named student?
+student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
+print(student["age"])
