@@ -21,3 +21,9 @@ print(student["age"])
 student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 student["grade"] = "B"
 print(student)
+
+
+# Remove a key "age" from a dictionary using pop().
+student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
+del student["age"]
+print(student)
