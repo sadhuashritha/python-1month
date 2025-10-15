@@ -41,3 +41,8 @@ for i in student.keys():
 #for i in student: 
     print("keys: ",i)
 
+#Write a Python program to get all values from a dictionary.
+student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
+for i in student.values():
+    print("values: ",i)
+
