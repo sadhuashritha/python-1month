@@ -46,3 +46,7 @@ student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 for i in student.values():
     print("values: ",i)
 
+# Use a loop to print all keys and values in a dictionary.
+student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
+for i,j in student.items():
+    print(i,": ",j)
