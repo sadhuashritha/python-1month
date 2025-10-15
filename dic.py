@@ -34,3 +34,10 @@ for i in student.keys():
     if i == "name":
         print("The key, name exists")
 
+
+# Write a Python program to get all keys from a dictionary.
+student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
+for i in student.keys():
+#for i in student: 
+    print("keys: ",i)
+
