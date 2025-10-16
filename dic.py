@@ -99,3 +99,8 @@ print(dict(sorted(dic.items())))
 dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
 sol = dict(sorted(dic.items(), key = lambda item : item[1]))
 print(sol)
+
+#Write a Python program to sort a dictionary by its values(descending)
+dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
+sol = dict(sorted(dic.items(), key = lambda item : item[1],reverse = True))
+print(sol)
