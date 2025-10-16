@@ -67,3 +67,11 @@ d4 = {**d1, **d2}
 print(d3)
 print(d4)
 
+# Write a Python program to find the key with the maximum value in a dictionary.
+dic = {"A":1,"B":15,"C":100,"D":45,"E":50,"F":46}
+max = 0
+for i,j in dic.items():
+    if j > max:
+        max = j
+        key = i
+print(key)
