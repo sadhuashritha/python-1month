@@ -56,3 +56,13 @@ dict[1] = "ashritha"
 dict["age"] = 20
 dict["a"] = "Grade A"
 print(dict)
+
+
+# Write a Python program to merge two dictionaries into one.
+d1 = {1:"A",2:"B"}
+d2 = {2:"C",3:"D"}
+d3 = d1 | d2
+# or
+d4 = {**d1, **d2}
+print(d3)
+print(d4)
