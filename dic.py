@@ -76,4 +76,10 @@ for i,j in dic.items():
         key = i
 print(key)
 
+# Write a Python program to count the number of keys in a dictionary.
+dic = {1:"A",2:"B",3:"C",6:"D",8:"E",7:"F"}
+count = 0
+for i in dic:
+    count += 1
+print(count)
 
