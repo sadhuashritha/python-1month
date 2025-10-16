@@ -83,3 +83,9 @@ for i in dic:
     count += 1
 print(count)
 
+
+# Given a dictionary { 'a': 10, 'b': 20, 'c': 30 }, increase all values by 5
+dic = { 'a': 10, 'b': 20, 'c': 30 }
+for i,j in dic.items():
+    dic[i] = (j + 5)
+print(dic)
