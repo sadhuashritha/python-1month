@@ -89,5 +89,7 @@ for i,j in dic.items():
     dic[i] = (j + 5)
 print(dic)
 
-
+# Write a Python program to sort a dictionary by its keys.
+dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
+print(dict(sorted(dic.items())))
  
