@@ -83,44 +83,10 @@ for i in dic:
     count += 1
 print(count)
 
-
 # Given a dictionary { 'a': 10, 'b': 20, 'c': 30 }, increase all values by 5
 dic = { 'a': 10, 'b': 20, 'c': 30 }
 for i,j in dic.items():
     dic[i] = (j + 5)
 print(dic)
 
-# Write a Python program to sort a dictionary by its keys.
-dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
-print(dict(sorted(dic.items())))
-
-
-#Write a Python program to sort a dictionary by its values(ascending).
-dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
-sol = dict(sorted(dic.items(), key = lambda item : item[1]))
-print(sol)
-
-#Write a Python program to sort a dictionary by its values(descending)
-dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
-sol = dict(sorted(dic.items(), key = lambda item : item[1],reverse = True))
-print(sol)
-
-
-#Convert two lists — one of keys and one of values — into a single dictionary.
-keys = ["A", "B", "C", "D"]
-values = [10, 20, 30, 40]
-res= {}
-for i in range(len(keys)):
-    res[keys[i]] = values[i]
-print(res)
-# or
-res1 = dict(zip(keys,values))
-print(res1)
-
-
-# Write a program to find the sum of all values in a dictionary.
-dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
-sum = 0
-for i in dic.values():
-    sum += i
-print(sum)
+ 
