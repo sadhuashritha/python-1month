@@ -99,6 +99,17 @@ dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
 sol = dict(sorted(dic.items(), key = lambda item : item[1]))
 print(sol)
 
+#Convert two lists — one of keys and one of values — into a single dictionary.
+keys = ["A", "B", "C", "D"]
+values = [10, 20, 30, 40]
+res= {}
+for i in range(len(keys)):
+    res[keys[i]] = values[i]
+print(res)
+# or
+res1 = dict(zip(keys,values))
+print(res1)
+
 
 # Write a program to find the sum of all values in a dictionary.
 dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
