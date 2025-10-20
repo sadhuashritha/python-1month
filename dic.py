@@ -110,4 +110,12 @@ print(res)
 res1 = dict(zip(keys,values))
 print(res1)
 
+# Write a program to find the sum of all values in a dictionary.
+dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
+sum = 0
+for i in dic.values():
+    sum += i
+print(sum)
+
+
  
