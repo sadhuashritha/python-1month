@@ -94,10 +94,7 @@ print(dic)
 dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
 print(dict(sorted(dic.items())))
 
-#Write a Python program to sort a dictionary by its values(ascending).
-dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
-sol = dict(sorted(dic.items(), key = lambda item : item[1]))
-print(sol)
+
 
 #Convert two lists — one of keys and one of values — into a single dictionary.
 keys = ["A", "B", "C", "D"]
