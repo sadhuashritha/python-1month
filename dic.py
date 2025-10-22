@@ -137,3 +137,23 @@ for i,j in dic.items():
     if j != None and j != "":
         dic2[i] = j
 print(dic2)
+
+# Write a Python program to invert a dictionary — swap keys and values.
+dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
+dic2 = {}
+for i,j in dic.items():
+    dic2[j] = i
+print(dic2)
+
+# Write a Python program to combine two dictionaries, adding values for common keys.
+# Example:
+# { 'a': 10, 'b': 20 }, { 'b': 30, 'c': 40 } → { 'a': 10, 'b': 50, 'c': 40 }
+dic1 = {'a': 10, 'b': 20}
+dic2 = {'b': 30, 'c': 40}
+ans = dic1.copy()
+for i,j in dic2.items():
+    if i in ans:
+        ans[i] += j
+    else:
+        ans[i] = j
+print(ans)
