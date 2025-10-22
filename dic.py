@@ -3,10 +3,10 @@
 # The task is to create a dictionary to store marks of students with their names (name will be unique).
 names = ["john", "ala", "ilia", "sudan", "mercy"]
 marks = [100, 200, 150, 80, 300]
-dict = {}
+dic = {}
 for i,j in zip(names,marks):
-    dict[i] = j
-print(dict)
+    dic[i] = j
+print(dic)
 
 # Create a dictionary named student with keys name, age, and grade and print it.
 student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
@@ -51,11 +51,11 @@ student = {"name" : "ashritha" ,"age": 20, "grade": "A"}
 for i,j in student.items():
     print(i,": ",j)
 # Create an empty dictionary and add 3 key-value pairs using assignment (dict[key] = value).
-dict = {}
-dict[1] = "ashritha"
-dict["age"] = 20
-dict["a"] = "Grade A"
-print(dict)
+dic = {}
+dic[1] = "ashritha"
+dic["age"] = 20
+dic["a"] = "Grade A"
+print(dic)
 
 
 # Write a Python program to merge two dictionaries into one.

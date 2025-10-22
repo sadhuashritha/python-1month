@@ -91,7 +91,7 @@ student = tup[0]
 marks = tup[1]
 avg = sum(marks)/ len(student)
 print("student" , student)
-print("total marks",avg
+print("total marks",avg)
 
 # Iterate through tuple (‘red’, ‘green’, ‘blue’) and print each element with its index.
 tup = ("red", "green", "blue")
@@ -124,19 +124,21 @@ tup = [("John", 85), ("Alice", 92), ("Bob", 78)]
 ans = sorted(tup,key=lambda x : x[1])
 print(ans)
 
+# 1122. Relative Sort Array
+# Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1.
+# Sort the elements of arr1 such that the relative ordering of items in arr1 are the same as in arr2. Elements that do not appear in arr2 should be placed at the end of arr1 in ascending order.
+arr1 = [2,3,1,3,2,4,6,7,9,2,19]
+arr2 = [2,1,4,3,9,6]
+ans= []
+for i in arr2:
+    for j in arr1:
+        if i == j:
+            ans.append(i)
 
-class Solution:
-    def relativeSortArray(self, arr1: List[int], arr2: List[int]) -> List[int]:
-        ans= []
-        for i in arr2:
-            for j in arr1:
-                if i == j:
-                    ans.append(i)
-
-        for j in sorted(arr1):
-            if j not in arr2:
-                ans.append(j)
-        return ans
+for j in sorted(arr1):
+    if j not in arr2:
+        ans.append(j)
+print(ans)
 
 # 1337. The K Weakest Rows in a Matrix
 # You are given an m x n binary matrix mat of 1's (representing soldiers) and 0's (representing civilians). The soldiers are positioned in front of the civilians. That is, all the 1's will appear to the left of all the 0's in each row.
@@ -190,7 +192,7 @@ for i in range(len(nums)):
     ans.append((count))
 freq = list(range(len(nums)))
 freq.sort(key = lambda x : (ans[x], -nums[x]))
-return [nums[i] for i in freq]
+print([nums[i] for i in freq])
 
 
 # 1337. The K Weakest Rows in a Matrix
@@ -221,7 +223,7 @@ for i in range(len(mat)):
 # return index[:k]
 
 ans.sort(key = lambda x : (x[1],x[0]))
-return [x[0] for x in ans[:k]]
+print([x[0] for x in ans[:k]])
 
 
 # Create a tuple with 6 elements of different data types. Print its length.
@@ -304,4 +306,3 @@ tup = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 for i in range(0,len(tup),2):
     print(tup[i],end=" ")
 print("")
-

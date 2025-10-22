@@ -154,13 +154,14 @@ for birth,death in logs:
 maxpop = max(count)
 for i in range(1950,2050):
     if count[i] == maxpop:
-print(i)
+        print(i,end=" ")
+print()
 
 # 1470. Shuffle the Array
 # Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn].
 # Return the array in the form [x1,y1,x2,y2,...,xn,yn].
 
- ans = []
+ans = []
 # for i in range(n):
 #     ans.append(nums[i])
 #     ans.append(nums[i+n])
@@ -207,7 +208,8 @@ print(ans)
 # Repeat the previous step until there are no elements to read in nums and index.
 # Return the target array.
 # It is guaranteed that the insertion operations will be valid.
-nums = [0,1,2,3,4], index = [0,1,2,2,1]
+nums = [0,1,2,3,4]
+index = [0,1,2,2,1]
 res = []
 for i in range(len(nums)):
     res.insert(index[i],nums[i])
