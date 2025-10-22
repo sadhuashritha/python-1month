@@ -129,3 +129,11 @@ for char in alph:
     else:
         freq[char] = 1
 print(freq)
+
+# Write a Python program to remove all keys with None or empty string values. explain these two questions
+dic = {"B": 15, "A": "", "E": 50, "C": None, "D": ""}
+dic2 = {}
+for i,j in dic.items():
+    if j != None and j != "":
+        dic2[i] = j
+print(dic2)
