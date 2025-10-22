@@ -145,6 +145,7 @@ for i,j in dic.items():
     dic2[j] = i
 print(dic2)
 
+
 # Write a Python program to combine two dictionaries, adding values for common keys.
 # Example:
 # { 'a': 10, 'b': 20 }, { 'b': 30, 'c': 40 } → { 'a': 10, 'b': 50, 'c': 40 }
