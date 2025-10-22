@@ -120,4 +120,12 @@ for i in dic.values():
 print(sum)
 
 
- 
+#  Write a Python program to create a dictionary from a string, where keys are characters and values are their frequencies. Example: "apple" → { 'a':1, 'p':2, 'l':1, 'e':1 }
+alph = "hello"
+freq = {}
+for char in alph:
+    if char in freq:
+        freq[char] += 1
+    else:
+        freq[char] = 1
+print(freq)
