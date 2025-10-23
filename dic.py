@@ -158,3 +158,20 @@ for i,j in dic2.items():
     else:
         ans[i] = j
 print(ans)
+
+# 347. Top K Frequent Elements
+# Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+nums = [1,1,1,2,2,3]
+k = 2
+ans = []
+freq = {}
+for i in nums:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+res = sorted(freq.items(), key = lambda item:item[1],reverse = True)
+for i in range(k):
+    ans.append(res[i][0])
+print(ans)
