@@ -179,26 +179,26 @@ print(ans)
 
 # 387. First Unique Character in a String
 # Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
-# s = "leetcode"
-# freq = {}
-# for i in s:
-#     if i in freq:
-#         freq[i] += 1
-#     else:
-#         freq[i] = 1
+s = "leetcode"
+freq = {}
+for i in s:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
 
-# for i,j in freq.items():
-#     if j == 1:
-#         print(s.index(i))
-#         break
-#     else:
-#         print(-1)
+for i,j in freq.items():
+    if j == 1:
+        print(s.index(i))
+        break
+    else:
+        print(-1)
 
 # or
 
-freq = Counter(s)
-for i,j in freq.items():
-    if j==1:
-       print(s.index(i))
-    else:
-        print(-1)
+# freq = Counter(s)
+# for i,j in freq.items():
+#     if j==1:
+#        print(s.index(i))
+#     else:
+#         print(-1)
