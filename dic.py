@@ -139,7 +139,12 @@ for i,j in dic.items():
 print(dic2)
 
 
-
+# Write a Python program to invert a dictionary — swap keys and values.
+dic = {"B": 15, "A": 1, "E": 50, "C": 10, "D": 45}
+dic2 = {}
+for i,j in dic.items():
+    dic2[j] = i
+print(dic2)
 
 # Write a Python program to combine two dictionaries, adding values for common keys.
 # Example:
