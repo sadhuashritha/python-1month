@@ -159,3 +159,46 @@ for i,j in dic2.items():
         ans[i] = j
 print(ans)
 
+# 347. Top K Frequent Elements
+# Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+nums = [1,1,1,2,2,3]
+k = 2
+ans = []
+freq = {}
+for i in nums:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+res = sorted(freq.items(), key = lambda item:item[1],reverse = True)
+for i in range(k):
+    ans.append(res[i][0])
+print(ans)
+
+
+# 387. First Unique Character in a String
+# Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
+s = "leetcode"
+freq = {}
+for i in s:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+for i,j in freq.items():
+    if j == 1:
+        print(s.index(i))
+        break
+    else:
+        print(-1)
+
+# or
+
+# freq = Counter(s)
+# for i,j in freq.items():
+#     if j==1:
+#        print(s.index(i))
+#     else:
+#         print(-1)
