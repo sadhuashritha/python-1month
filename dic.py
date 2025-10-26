@@ -146,6 +146,18 @@ for i,j in dic.items():
     dic2[j] = i
 print(dic2)
 
+# Write a Python program to combine two dictionaries, adding values for common keys.
+# Example:
+# { 'a': 10, 'b': 20 }, { 'b': 30, 'c': 40 } → { 'a': 10, 'b': 50, 'c': 40 }
+dic1 = {'a': 10, 'b': 20}
+dic2 = {'b': 30, 'c': 40}
+ans = dic1.copy()
+for i,j in dic2.items():
+    if i in ans:
+        ans[i] += j
+    else:
+        ans[i] = j
+print(ans)
 
 # 347. Top K Frequent Elements
 # Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
