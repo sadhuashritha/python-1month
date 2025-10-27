@@ -186,3 +186,18 @@ for i in s:
     else:
         freq[i] = 1
 
+for i,j in freq.items():
+    if j == 1:
+        print(s.index(i))
+        break
+    else:
+        print(-1)
+
+# or
+
+# freq = Counter(s)
+# for i,j in freq.items():
+#     if j==1:
+#        print(s.index(i))
+#     else:
+#         print(-1)
