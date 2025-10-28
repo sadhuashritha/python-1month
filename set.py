@@ -22,3 +22,7 @@ set1 ={1,2,3,4}
 set1.discard(4)
 print(set1)
 
+# Write a program to clear all elements from a set using clear().
+set1 ={1,2,3,4}
+set1.clear()
+print(set1)
