@@ -34,3 +34,19 @@ ans = set1|set2
 print(ans)
 ans1 = set1.union(set2)
 print(ans1)
+
+# Write a program to find the intersection of two sets.
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,7}
+ans = set1 & set2
+print(ans)
+ans1 = set1.intersection(set2)
+print(ans1)
+
+# Write a program to find the difference between two sets (A - B).
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,7}
+ans = set1 - set2
+print(ans)
+ans1 = set1.differenece(set2)
+print(ans1)
