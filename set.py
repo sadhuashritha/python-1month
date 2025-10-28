@@ -26,3 +26,11 @@ print(set1)
 set1 ={1,2,3,4}
 set1.clear()
 print(set1)
+
+# Write a program to find the union of two sets.
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,7}
+ans = set1|set2
+print(ans)
+ans1 = set1.union(set2)
+print(ans1)
