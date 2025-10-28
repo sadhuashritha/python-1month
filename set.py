@@ -48,5 +48,13 @@ set1 ={1,2,3,4}
 set2 ={5,1,2,6,7}
 ans = set1 - set2
 print(ans)
-ans1 = set1.differenece(set2)
+ans1 = set1.difference(set2)
+print(ans1)
+
+# Write a program to find the symmetric difference between two sets.
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,7}
+ans = set1 ^ set2
+print(ans)
+ans1 = set1.symmetric_difference(set2)
 print(ans1)
