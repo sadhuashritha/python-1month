@@ -58,3 +58,18 @@ ans = set1 ^ set2
 print(ans)
 ans1 = set1.symmetric_difference(set2)
 print(ans1)
+
+# Write a program to check if a set is a subset of another set.
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,3,4,7}
+count = 0
+for i in set1:
+    if i in set2:
+        count += 1
+if count == len(set1):
+    print(True)
+else:
+    print(False)
+
+# or
+print(set2.issubset(set1))
