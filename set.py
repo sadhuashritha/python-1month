@@ -70,6 +70,5 @@ if count == len(set1):
     print(True)
 else:
     print(False)
-
 # or
-print(set2.issubset(set1))
+print(set1.issubset(set2))
