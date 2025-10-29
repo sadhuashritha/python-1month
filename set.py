@@ -100,3 +100,8 @@ set1 ={1,2,3,4}
 set2 ={5,1,6,3,4,7}
 ans = set1 ^ set2
 print(ans)
+
+# Write a Python program to find the maximum and minimum values in a numeric set.
+set1 ={5,1,6,3,4,7}
+print("min value of set1 is: ",min(set1))
+print("max value of set1 is: ",max(set1))
