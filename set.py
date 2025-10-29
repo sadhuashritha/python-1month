@@ -72,3 +72,25 @@ else:
     print(False)
 # or
 print(set1.issubset(set2))
+
+# Write a program to check if a set is a superset of another set.
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,3,4,7}
+count= 0 
+for i in set1:
+    if i in set2:
+        count+=1
+if count == len(set1):
+    print("set2 is superset of set1")
+else:
+    print("set2 is not superset of set1")
+#  or
+print(set2.issuperset(set1))
+
+# Write a Python program to find common elements between three sets.
+set1 ={1,2,3,4}
+set2 ={5,1,2,6,3,4,7}
+set3 = {5,1,2,4,9,6}
+
+ans = set1 & set2 & set3
+print(ans)
