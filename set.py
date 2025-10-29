@@ -94,3 +94,9 @@ set3 = {5,1,2,4,9,6}
 
 ans = set1 & set2 & set3
 print(ans)
+
+# Given two sets A and B, write a program to print elements that are in A or B but not in both.
+set1 ={1,2,3,4}
+set2 ={5,1,6,3,4,7}
+ans = set1 ^ set2
+print(ans)
