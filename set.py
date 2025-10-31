@@ -115,3 +115,22 @@ for i in ans:
     count += 1
 print(count)
 
+# Write a program to count how many unique elements are present in a list using a set.
+list = [1,2,3,3,2,4,5,4,6,7,8]
+ans = set(list)
+count = 0
+for i in ans:
+    count += 1
+print(count)
+
+# Write a program to find all elements that appear more than once in a list using sets.
+list = [1,2,3,3,2,4,5,4,6,7,8]
+present = set()
+notpresent = set()
+for i in list:
+    if i in present:
+        notpresent.add(i)
+    else:
+        present.add(i)
+print(notpresent)
+
