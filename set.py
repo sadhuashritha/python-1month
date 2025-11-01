@@ -134,23 +134,7 @@ for i in list:
         present.add(i)
 print(notpresent)
 
-# Write a program to compare two sets and print whether they are equal or not.
-set1 ={1,2,3,4}
-set3 ={1,2,4,3}
-set2 ={5,1,2,6,3,4,7}
-if set1 == set3:
-    print("Both are equal")
-else:
-    print("Both are not equal")
 
-# 268. Missing Number
-# Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
-nums = [3,0,1]
-n = len(nums)
-ans = n * (n + 1) // 2
-ans1 = sum(nums)
-ans2 = ans - ans1
-print(ans2)
 # 268. Missing Number
 # Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 nums = [3,0,1]
