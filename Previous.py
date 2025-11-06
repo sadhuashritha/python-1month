@@ -94,3 +94,8 @@ if x > y:
     print("First number is greater than second")
 else:
     print("First number is not greater than second")
+
+# 14 Input a number and print its absolute value.
+print(abs(3 + 6j))
+print(abs(-98))
+print(abs(98))
