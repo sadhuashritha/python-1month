@@ -24,3 +24,12 @@ elif b > a and b > c :
     print("Largest number is b: ",b)
 else:
     print("Largest number is c: ",c) 
+
+# Input a number and check whether it is positive, negative, or zero.
+x = 0
+if x > 0:
+    print(x, " is positive number")
+elif x < 0:
+    print(x," is negative number")
+else:
+    print(x," is zero")
