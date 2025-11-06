@@ -35,7 +35,8 @@ else:
     print(x," is zero")
 
 # 5. Input a floating-point number and round it to two decimals.
-n = float(input("Enter a decimal number: "))
+# n = float(input("Enter a decimal number: "))
+n =56.455678
 print(n.__round__(2))
 print(round(n,2))
 
@@ -50,3 +51,25 @@ print("area: ",area,"perimeter: ",perimeter)
 cel = 56
 far = (cel * 9/5) + 32
 print(far)
+
+# 8. Input two numbers and swap them (without using a third variable).
+a = 10
+b = 20
+print("Before swaping : " "a:",a,"b:",b)
+a,b = b,a
+print("After Swapping: " "a:",a,"b:",b)
+
+# 9.Input a number and print its square and cube.
+n = 6
+print("square: ",n ** 2,"Cube: ",n**3)
+
+# 10.Input the marks of 5 subjects and print total, average, and percentage.
+math = 60
+sci = 90
+soc = 60
+tel = 80
+hin = 90
+total = math + sci + soc + tel + hin
+average = total / 5
+percentage = (total / 500) * 100
+print(total,average,percentage)
