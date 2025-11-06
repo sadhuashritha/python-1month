@@ -72,4 +72,17 @@ hin = 90
 total = math + sci + soc + tel + hin
 average = total / 5
 percentage = (total / 500) * 100
-print(total,average,percentage)
+print("total: ",total,"average: ",average,"percentage:",percentage)
+
+# 11.Input radius and calculate area and circumference of a circle.
+r = 70
+area = 3.14 * (r**2)
+circumference = 2 * 3.14 * r
+print("area: ",area,"circumference: ",circumference)
+
+# 12 Input a number and check if it is even or odd.
+n = 98
+if n % 2 == 0:
+    print(n,"is Even number: ")
+else:
+    print(n,"is Odd number: ")
