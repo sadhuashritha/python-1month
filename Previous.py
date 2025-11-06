@@ -13,3 +13,14 @@ diff = n - m
 mul = n * m
 div = n / m
 print("sum: ",sum,"difference: ",diff,"multiplication: ",mul,"division: ",div)
+
+# Input three numbers and print the largest.
+a = 10
+b = 100
+c = 30
+if a > b and a > c:
+    print("Largest numebr is a: ",a)
+elif b > a and b > c :
+    print("Largest number is b: ",b)
+else:
+    print("Largest number is c: ",c) 
