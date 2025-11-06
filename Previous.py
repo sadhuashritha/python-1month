@@ -39,3 +39,10 @@ n = float(input("Enter a decimal number: "))
 print(n.__round__(2))
 print(round(n,2))
 
+# 6. Input length and breadth; calculate rectangle area and perimeter.
+len = 5
+bre = 10
+area = len * bre
+perimeter = 2*(len + bre)
+print("area: ",area,"perimeter: ",perimeter)
+
