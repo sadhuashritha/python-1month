@@ -46,3 +46,7 @@ area = len * bre
 perimeter = 2*(len + bre)
 print("area: ",area,"perimeter: ",perimeter)
 
+# 7. Input temperature in Celsius and convert to Fahrenheit.
+cel = 56
+far = (cel * 9/5) + 32
+print(far)
