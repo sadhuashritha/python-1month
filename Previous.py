@@ -99,3 +99,5 @@ else:
 print(abs(3 + 6j))
 print(abs(-98))
 print(abs(98))
+
+# Input cost price and selling price, calculate profit or loss.
