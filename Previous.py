@@ -95,8 +95,5 @@ if x > y:
 else:
     print("First number is not greater than second")
 
-# 14 Input a number and print its absolute value.
-print(abs(3 + 6j))
-print(abs(-98))
-print(abs(98))
+
 # Input cost price and selling price, calculate profit or loss.
