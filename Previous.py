@@ -88,13 +88,7 @@ else:
     print(n,"is Odd number: ")
 
 
-# 13 Take two numbers and print True if first is greater than second, else False.
-x = 90
-y = 80
-if x > y:
-    print("First number is greater than second")
-else:
-    print("First number is not greater than second")
+
 
 
 # Input cost price and selling price, calculate profit or loss.
