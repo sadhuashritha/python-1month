@@ -48,12 +48,6 @@ two = m[1]
 print(one)
 print(two)
 
-# 10.Write a program that takes two numbers as strings from the user and shows the difference between string concatenation and numeric addition.
-a = "9"
-b = "10"
-c = 9
-d = 10
-print("String Concatenation",a+b)
-print("Numeric Addition:",c+d)
+
 
 # Write a program that asks the user for three values and prints them using an f-string i
