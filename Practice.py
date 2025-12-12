@@ -38,3 +38,20 @@ print(len(s))
 # n = int(input("Enter Your Name"))
 n = "Ashritha"
 print("You entered: " , name)
+
+# 9.Write a program that reads your full name and prints it in one line and then in two lines (first name on first line, last name on second).
+n = "Sadhu Ashritha"
+print(n)
+m = n.split()
+one = m[0]
+two = m[1]
+print(one)
+print(two)
+
+# 10.Write a program that takes two numbers as strings from the user and shows the difference between string concatenation and numeric addition.
+a = "9"
+b = "10"
+c = 9
+d = 10
+print(a+b)
+print(c+d)
