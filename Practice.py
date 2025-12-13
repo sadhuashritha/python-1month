@@ -56,8 +56,25 @@ d = 10
 print("String Concatenation",a+b)
 print("Numeric Addition:",c+d)
 
-# Write a program that asks the user for three values and prints them using an f-string i
+# 11.Write a program that asks the user for three values and prints them using an f-string i
 a = 10
 b = 20
 c = 30
 print(f"A: {a}, B: {b} C: {c}")
+
+# 12. Write a program that demonstrates the use of sep and end parameters in print().
+a = "Apple"
+b = "Banana"
+print("A: ",a,"B: ",b)
+print(a,b, sep=", " , end= " " )
+print(a,b)
+
+# 13. Write a program that prints a formatted table-like output using \t and \n.
+print("Name\tAge\tCity")
+print("Will\t20\tMedak")
+print("Lisa\t22\tKamareddy")
+print("Chandh\t18\tHyderabad")
+# 14.Write a program that reads a float from the user and prints it rounded to 2 decimal places.
+# 15.Write a program that shows the difference between print(5) and print("5").
+print(type(5))
+print(type("5"))
