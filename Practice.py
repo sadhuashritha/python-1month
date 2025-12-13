@@ -57,3 +57,7 @@ print("String Concatenation",a+b)
 print("Numeric Addition:",c+d)
 
 # Write a program that asks the user for three values and prints them using an f-string i
+a = 10
+b = 20
+c = 30
+print(f"A: {a}, B: {b} C: {c}")
