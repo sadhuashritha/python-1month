@@ -69,9 +69,5 @@ print("A: ",a,"B: ",b)
 print(a,b, sep=", " , end= " " )
 print(a,b)
 
-# 13. Write a program that prints a formatted table-like output using \t and \n.
-print("Name\tAge\tCity")
-print("Will\t20\tMedak")
-print("Lisa\t22\tKamareddy")
-print("Chandh\t18\tHyderabad")
+
 # 14.Write a program that reads a float from the user and prints it rounded to 2 decimal places.
