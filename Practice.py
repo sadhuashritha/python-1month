@@ -140,3 +140,31 @@ print(a,type(a))
 
 a = "ten"
 print(a,type(a))
+
+# 23. Write a program that uses descriptive variable names for calculating the area of a rectangle.
+length = 10
+breadth = 20
+area = 2*(length + breadth)
+print(area)
+
+# 25.Write a program that uses a constant-like variable (e.g. PI = 3.14) and calculates the area of a circle.
+r = 1.5
+pi = 3.14
+area = pi * r**2
+print(area)
+
+# 26 Write a program to add, subtract, multiply, and divide two numbers.
+a = 20
+b = 15
+sum = a + b
+diff = a - b
+mul = a * b
+quo = a / b
+flo = a // b
+print(sum,diff,mul,quo,flo)
+
+# 27 Write a program that uses the floor division (//) and modulus (%) operators and prints the results for two integers.
+a = 20
+b = 10
+print(a//b)
+print(a % b)
