@@ -74,7 +74,12 @@ print("Name\tAge\tCity")
 print("Will\t20\tMedak")
 print("Lisa\t22\tKamareddy")
 print("Chandh\t18\tHyderabad")
+
 # 14.Write a program that reads a float from the user and prints it rounded to 2 decimal places.
 a = 15.345
 b = round(a,2)
 print(b)
+
+# 15 Write a program that shows the difference between print(5) and print("5").
+print(type("5"))
+print(type(5))
