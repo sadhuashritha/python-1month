@@ -60,7 +60,7 @@ print("Numeric Addition:",c+d)
 a = 10
 b = 20
 c = 30
-print(f"A: {a}, B: {b} C: {c}")
+print(f"A: {a} B: {b} C: {c}")
 
 # 12. Write a program that demonstrates the use of sep and end parameters in print().
 a = "Apple"
@@ -83,3 +83,60 @@ print(b)
 # 15 Write a program that shows the difference between print(5) and print("5").
 print(type("5"))
 print(type(5))
+
+
+
+# VARIABLES
+
+# 16.Write a program that stores your name, age, and CGPA in variables and prints them.
+name = "Ashritha"
+age = 20
+CGPA = 8.8
+print(f"name :{name} age:{age} CGPA:{CGPA}")
+
+# 17.Write a program to swap two variables using a temporary variable.
+a = 20
+b = 30
+print("a: ",a)
+print("b: ",b)
+c = a
+a = b
+b = c
+print("a: ",a)
+print("b: ",b)
+print()
+print()
+
+# 18 Write a program to swap two variables without using a temporary variable.
+a = 20
+b = 30
+print("a: ",a)
+print("b: ",b)
+a,b = b,a
+print("a: ",a)
+print("b: ",b)
+
+# 19 Write a program that assigns the same value to three variables in one line and prints them
+a=b=c = 10
+print(a,b,c)
+
+# 20 Write a program that demonstrates multiple assignment like a, b, c = 1, 2, 3.
+a,b,c = 1,2,3
+print(a,b,c)
+
+# 21 Write a program that reads two numbers and stores their sum, difference, product, and quotient in four different variables and prints all.
+a = 20
+b = 15
+sum = a + b
+diff = a - b
+mul = a * b
+quo = a / b
+flo = a // b
+print(sum,diff,mul,quo,flo)
+
+# 22. Write a program to show what happens if you reassign a variable from int to string.
+a = 10
+print(a,type(a))
+
+a = "ten"
+print(a,type(a))
