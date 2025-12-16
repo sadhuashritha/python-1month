@@ -319,3 +319,13 @@ print(a is c)
 print(c is not a)
 print(c is d)
 print(d is not c)
+
+# KEYWORDS
+# 46 Write a program that uses if, elif, and else to categorize a number as negative, zero, or positive.
+a = -30
+if a > 0:
+    print("Given number is positive: ",a)
+elif a < 0:
+    print("Given number is negative: ",a)
+else:
+    print("Given number is zero: ",a)
