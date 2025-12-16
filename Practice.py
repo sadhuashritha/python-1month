@@ -225,4 +225,24 @@ a = (3 + 4 ) * 2 ** 3
 print(a)
 a = 3 + (4 * 2 ) ** 3
 print(a)
+print()
+
+# 36. Write a program to demonstrate assignment operators (+=, -=, *=, /=, //=, %=, **=) on a variable.
+a = 20
+b = 30
+a+=b
+print(a)
+a-=b
+print(a)
+a*=b
+print(a)
+a/=b
+print(a)
+a//=b
+print(a)
+a%=b
+print(a)
+a**=b
+print(a)
+print()
 
