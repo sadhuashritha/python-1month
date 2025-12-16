@@ -264,3 +264,14 @@ elif a % 2 != 0 and a % 3 == 0:
     print("Divisible by 3 but not 2")
 else:
     print("Not divisible by both 2 and 3")
+
+# 39. Write a program that reads three numbers and prints the largest using only comparison operators (no max()).
+a = 10
+b = 20
+c = 30
+if a>b and a>c:
+    print(a,"a is greater element")
+elif b>c and b>a:
+    print(b, "b is greater element")
+else:
+    print(c,"c is greater element")
