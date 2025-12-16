@@ -270,14 +270,43 @@ a = 10
 b = 20
 c = 30
 if a>b and a>c:
-    print(a,"a is greater element")
+    print(a," a is greater element")
 elif b>c and b>a:
-    print(b, "b is greater element")
+    print(b, " b is greater element")
 else:
-    print(c,"c is greater element")
+    print(c," c is greater element")
+print()
 
 # 40. Write a program to demonstrate the difference between / and // when dividing integers.
 a = 10
 b = 20
 print(a/b)
 print(a//b)
+print()
+
+# 41. Write a program that uses bitwise operators (&, |, ^, <<, >>) on two small integers and prints the results.
+a = 1
+b = 2
+print(a & b)
+print(a | b)
+print(a ^ b)
+print(a<<b)
+print(a>>b)
+print()
+
+# 42. Write a program that checks if a number is odd using a bitwise operation.
+
+# 43.Write a program that toggles bits of a number using bitwise XOR.
+
+# 44.Write a program that demonstrates the use of in and not in operators on a string
+x = 20
+y = 30
+li = [10,20,30,40,50]
+if (x not in li):
+    print("Given element is not present in list")
+else:
+    print("Given element is present in list")
+print()
+
+for i in range(1,101):
+    print(i,end=" ")
