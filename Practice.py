@@ -168,3 +168,61 @@ a = 20
 b = 10
 print(a//b)
 print(a % b)
+
+# 28 Write a program to calculate a raised to the power b using **.
+b = 2
+a = 5
+print(a**b)
+
+# 29. Write a program that compares two numbers and prints which one is greater using comparison operators.
+a = 20
+b = 60
+print(a<b)
+
+# 30. Write a program that checks if two given numbers are equal or not.
+a = 10
+b = 20
+print(a==b)
+print()
+print()
+
+# 31. Write a program that demonstrates all comparison operators (==, !=, >, <, >=, <=) with sample values.
+a = 10
+b = 20
+print(a>=b)
+print(a<=b)
+print(a==b)
+print(a!=b)
+print(a<b)
+print(a>b)
+print()
+
+# 32. Write a program that uses logical operators (and, or, not) to check if a number is in the range 10 to 20.
+a = 10
+b = 20
+print(a and b)
+print(a or b)
+print(not b)
+print(not a)
+print()
+
+# 33.Write a program that checks if a given year is between 2000 and 2025 and not equal to 2010.
+c = 2005
+if c>=2000 and c<=2025 and c!=2010:
+    print("Lies in between 2000 and 2025 and not equal to 2010")
+else:
+    print("Not satisfies the condition")
+
+# 34. Write a program to show the effect of operator precedence in an expression like 3 + 4 * 2 ** 3.
+a = 3 + 4 * 2 ** 3
+print(a)
+print()
+
+# 35.Rewrite an expression using parentheses to change the default precedence and show different outputs.
+a = 3 + 4 * 2 ** 3
+print(a)
+a = (3 + 4 ) * 2 ** 3
+print(a)
+a = 3 + (4 * 2 ) ** 3
+print(a)
+
