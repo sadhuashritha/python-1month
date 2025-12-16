@@ -308,5 +308,14 @@ else:
     print("Given element is present in list")
 print()
 
-for i in range(1,101):
-    print(i,end=" ")
+# 45 Write a program that demonstrates the use of is and is not operators on small integers and lists (identity vs equality).
+a = 10
+b = a
+c = 10
+d = 20
+print(a is not b)
+print(a is b)
+print(a is c)
+print(c is not a)
+print(c is d)
+print(d is not c)
