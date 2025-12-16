@@ -246,3 +246,9 @@ a**=b
 print(a)
 print()
 
+# 37. Write a program to check if a number is even using the modulus operator.
+a = 20
+if a %2==0:
+    print("Even Number")
+else:
+    print("Odd number")
