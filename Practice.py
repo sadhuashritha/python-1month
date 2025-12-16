@@ -252,3 +252,15 @@ if a %2==0:
     print("Even Number")
 else:
     print("Odd number")
+print()
+
+# 38.Write a program to check if a number is a multiple of both 3 and 5 using logical operators.
+a = 18
+if a % 2 == 0 and a % 3 == 0:
+    print("Divisible by 2 and 3")
+elif a %2==0 and a %2!=0:
+    print("Divisible by 2 but not 3")
+elif a % 2 != 0 and a % 3 == 0:
+    print("Divisible by 3 but not 2")
+else:
+    print("Not divisible by both 2 and 3")
