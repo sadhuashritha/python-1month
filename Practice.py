@@ -275,3 +275,9 @@ elif b>c and b>a:
     print(b, "b is greater element")
 else:
     print(c,"c is greater element")
+
+# 40. Write a program to demonstrate the difference between / and // when dividing integers.
+a = 10
+b = 20
+print(a/b)
+print(a//b)
