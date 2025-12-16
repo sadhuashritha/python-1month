@@ -329,3 +329,18 @@ elif a < 0:
     print("Given number is negative: ",a)
 else:
     print("Given number is zero: ",a)
+
+# 47.Write a program to demonstrate the use of for and while keywords in simple loops.
+# print 5 table using for loop
+for i in range(1,11):
+    sum = 5
+    sum = sum * i
+    print(sum,end=" ")
+print()
+# print 5 table using while loop 
+sum = 1
+while(sum < 11):
+    a = 5
+    a*=sum
+    print(a,end=" ")
+    sum += 1
