@@ -344,3 +344,21 @@ while(sum < 11):
     a*=sum
     print(a,end=" ")
     sum += 1
+print()
+
+# 48. Write a program that uses the break keyword to exit a loop when a certain condition is met.
+n = 15
+for i in range(1,n+1):
+    if i == 10:
+        print("Element Found: ",i)
+        break
+else:
+    print("Element not found")
+print()
+
+# 49.Write a program that uses the continue keyword to skip printing even numbers from 1 to 10.
+for i in range(1,11):
+    if i == 5 or i == 10:
+        continue
+    print("Number: ",i)
+print()
