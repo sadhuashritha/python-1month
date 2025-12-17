@@ -487,11 +487,27 @@ for i in li:
 print()
 
 # 62. Write a program that checks whether the input is numeric or not using string methods and then converts it to int safely.
-n = input("Enter a value: ")
-if n.isdigit():
-    x = int(n)
-    print("The number is numeric: ",x)
-else:
-    print("The given number is not numeric")
+# n = input("Enter a value: ")
+# if n.isdigit():
+#     x = int(n)
+#     print("The number is numeric: ",x)
+# else:
+#     print("The given number is not numeric")
+# print()
+# print()
+
+# 63. Write a program that takes a decimal number and converts it to int using int() and explains what happens to the fractional part.
+a = 10.6
+b = int(a)
+print(b,type(b))
+
+# 64.Write a program that demonstrates boolean operations using expressions like 5 > 3, 3 == 4, etc., and prints their types.
+a = 10
+b = 20
+c = a > b
+d = a == b
+print(c,type(c))
+print(d,type(d))
+
 
 
