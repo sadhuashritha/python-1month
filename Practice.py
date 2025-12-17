@@ -440,3 +440,58 @@ c = float(a)
 print(a,type(a))
 print(b,type(b))
 print(c,type(c))
+print()
+print()
+
+# 58. Write a program that demonstrates implicit type conversion (e.g., int + float).
+# Implicit
+a = 10
+print(a,type(a))
+b = 10.5
+print(b,type(b))
+c = "hello"
+print(c,type(c))
+print()
+
+# Explicit
+a = "8"
+b = int(a)
+c = float(a)
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
+print()
+
+# 59.Write a program that shows an example where implicit conversion does NOT happen and you have to use explicit casting.
+a = 10
+b = "20"
+# c = a + b
+# causes error
+c  = a + int(b)
+print(c,type(c))
+print()
+
+# 60. Write a program that calculates the average of three integers but ensures the result is a float.
+a = 10
+b = 30
+c = 100
+d = (a+b+c) / 3
+e = float(d)
+print(d)
+print()
+
+# 61.Write a program that stores different data types in a list and prints the type of each element.
+li = [10,10.0,"Ashritha",False]
+for i in li:
+    print(i,type(i))
+print()
+
+# 62. Write a program that checks whether the input is numeric or not using string methods and then converts it to int safely.
+n = input("Enter a value: ")
+if n.isdigit():
+    x = int(n)
+    print("The number is numeric: ",x)
+else:
+    print("The given number is not numeric")
+
+
