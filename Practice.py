@@ -404,3 +404,39 @@ if not "u" in str:
 else:
     print("U exists in given string")
 print()
+
+# 55.Write a program that shows the difference between a variable named global_var and using the global keyword inside a function.
+
+
+
+# DataTypes
+# =========
+
+
+# 56.Write a program that prints the type of various literals: 10, 10.5, "hello", True, None, [1,2], (1,2), {1,2}, {"a":1}.
+a = 10
+print(a,type(a))
+b = 10.5
+print(b,type(b))
+c = "hello"
+print(c,type(c))
+d = True
+print(d,type(d))
+e = None
+print(e,type(e))
+f = [1,2]
+print(f,type(f))
+g = (1,2)
+print(g,type(g))
+h = {1,2}
+print(h,type(h))
+i = {"a":1}
+print(i,type(i))
+
+# 57.Write a program that reads a number from the user as a string, converts it to int and float, and prints their types.
+a = "8"
+b = int(a)
+c = float(a)
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
