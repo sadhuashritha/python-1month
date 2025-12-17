@@ -1,4 +1,6 @@
 # Python Introduction + Input/Output
+# ==================================
+
 # 1.Write a program to print "Hello, World!".
 print("Hello World")
 
@@ -87,6 +89,7 @@ print(type(5))
 
 
 # VARIABLES
+# ==========
 
 # 16.Write a program that stores your name, age, and CGPA in variables and prints them.
 name = "Ashritha"
@@ -296,7 +299,11 @@ print()
 
 # 42. Write a program that checks if a number is odd using a bitwise operation.
 
+
+
 # 43.Write a program that toggles bits of a number using bitwise XOR.
+
+
 
 # 44.Write a program that demonstrates the use of in and not in operators on a string
 x = 20
@@ -320,7 +327,11 @@ print(c is not a)
 print(c is d)
 print(d is not c)
 
+
 # KEYWORDS
+# ========
+
+
 # 46 Write a program that uses if, elif, and else to categorize a number as negative, zero, or positive.
 a = -30
 if a > 0:
@@ -364,6 +375,8 @@ for i in range(1,11):
 print()
 
 # 50.Write a program that uses pass inside a function or loop and explain why it’s needed.
+
+
 # 51.Write a program that demonstrates the use of True, False, and None.
 a = True
 b = False
@@ -371,4 +384,23 @@ c = None
 print(a,type(a))
 print(b,type(b))
 print(c,type(c))
+print()
+
+# 52.Write a program that defines a function using def and returns a value using return.
+
+
+# 53.Write a program that uses the in keyword to check if a character exists in a string.
+str = "Ashritha"
+if "r" in str:
+    print("T exists in given string")
+else:
+    print("T doesnot exists in given string")
+print()
+
+# 54.Write a program to demonstrate the not keyword in a condition.
+str = "Ashritha"
+if not "u" in str:
+    print("U does not exists in given string")
+else:
+    print("U exists in given string")
 print()
