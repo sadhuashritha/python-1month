@@ -362,3 +362,13 @@ for i in range(1,11):
         continue
     print("Number: ",i)
 print()
+
+# 50.Write a program that uses pass inside a function or loop and explain why it’s needed.
+# 51.Write a program that demonstrates the use of True, False, and None.
+a = True
+b = False
+c = None
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
+print()
