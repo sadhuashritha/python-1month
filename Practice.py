@@ -615,9 +615,6 @@ if b == "a"or b=="e"or b=="i"or b=="o"or b=="u":
 else:
     print("Consonant")
 print()
-# or
-b= "a"
-if b in "aeiou":
-    print("Vowel")
-else:
-    print("Consonant")
+
+
+# 78.Write a program that checks if a character is uppercase, lowercase, digit, or special character.
