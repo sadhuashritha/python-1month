@@ -606,4 +606,18 @@ elif a<=69 and a>=50:
 elif a<=49 and a>=36:
     print("Grade D",a)
 else:
-    print("Fail,a")
+    print("Fail",a)
+
+# 77.Write a program that checks if a character is a vowel or consonant.
+b = "s"
+if b == "a"or b=="e"or b=="i"or b=="o"or b=="u":
+    print("Vowel")
+else:
+    print("Consonant")
+print()
+# or
+b= "a"
+if b in "aeiou":
+    print("Vowel")
+else:
+    print("Consonant")
