@@ -390,16 +390,16 @@ print()
 
 
 # 53.Write a program that uses the in keyword to check if a character exists in a string.
-str = "Ashritha"
-if "r" in str:
+stri = "Ashritha"
+if "r" in stri:
     print("T exists in given string")
 else:
     print("T doesnot exists in given string")
 print()
 
 # 54.Write a program to demonstrate the not keyword in a condition.
-str = "Ashritha"
-if not "u" in str:
+stri = "Ashritha"
+if not "u" in stri:
     print("U does not exists in given string")
 else:
     print("U exists in given string")
@@ -500,6 +500,7 @@ print()
 a = 10.6
 b = int(a)
 print(b,type(b))
+print()
 
 # 64.Write a program that demonstrates boolean operations using expressions like 5 > 3, 3 == 4, etc., and prints their types.
 a = 10
@@ -508,6 +509,76 @@ c = a > b
 d = a == b
 print(c,type(c))
 print(d,type(d))
+print()
+
+# 65 Write a program that converts an integer to string, concatenates it with another string, and prints the result.
+a = 10
+b = "ashritha"
+c = str(a)
+print("a:",a,"b:",b)
+print(c + b)
+print()
 
 
+# 66 Write a program that takes a boolean expression and prints True or False depending on a condition (e.g. age >= 18).
+age = 20
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+print()
 
+# 67.Write a program that converts a string "123" to int, adds 1 to it, and prints the result.
+a = "123"
+b = int(a)
+c = b + 1
+print(c)
+
+# 68.Write a program that converts a float to string and checks its length.
+a = 50.5678
+b = str(a)
+print("Length of a string: ",len(b))
+
+# 69. Write a program that converts a string like "3.14" to float and uses it in a calculation
+a = "3.14"
+b = float(a)
+r = 1
+areaofcircle = b * r**2
+print(areaofcircle)
+print()
+
+# 70.Write a program that uses type() and isinstance() to check types of variables.
+
+# 71.Write a program that checks if a number is positive.
+n = 10
+if n > 0:
+    print("Given number is positive")
+else:
+    print("Given number is not positive")
+
+# 72.Write a program that checks if a number is even or odd using if-else.
+n = 9
+if n % 2 == 0:
+    print("Even number")
+elif n % 2 != 0:
+    print("Odd Number")
+else:
+    print("Zero")
+
+# 73. Write a program that checks if a number is divisible by 3, 5, or both, and prints the appropriate message.
+x = 15
+if x % 3 == 0 and x % 5 == 0:
+    print("Given Number is divisible by both 3 and 5")
+elif x % 3 != 0 and x % 5 == 0:
+    print("Divisible by 3 but not 5")
+elif x % 3 != 0 and x % 5 == 0:
+    print("Divisible by 5 but not 3")
+else:
+    print("Not divisible by both 3 and 5")
+
+# 74.Write a program that checks if a given year is a leap year.
+a = 2024
+if (a % 4 == 0 and a % 100 != 0) or a % 400 == 0:
+    print("Leap year")
+else:
+    print("Not a leap year")
