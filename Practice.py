@@ -582,3 +582,28 @@ if (a % 4 == 0 and a % 100 != 0) or a % 400 == 0:
     print("Leap year")
 else:
     print("Not a leap year")
+
+# 75.Write a program that reads three numbers and prints the largest using if-elif-else.
+a = 10
+b = 0
+c = 89
+if a>b and b>c:
+    print("A is gearter: ",a)
+elif b>a and b>c:
+    print("B is gearter: ",b)
+elif c>a and c>b:
+    print("C is gearter: ",c)
+print()
+
+# 76. Write a program that assigns a grade (A, B, C, D, F) based on a student’s marks using if-elif-else.
+a = 75
+if a<=100 and a>=90:
+    print("Grade A",a)
+elif a<=89 and a>=70:
+    print("Grade B",a)
+elif a<=69 and a>=50:
+    print("Grade C",a)
+elif a<=49 and a>=36:
+    print("Grade D",a)
+else:
+    print("Fail,a")
