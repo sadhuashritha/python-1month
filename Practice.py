@@ -630,3 +630,24 @@ elif a.isdigit():
     print("Digit")
 else:
     print("Special Character")
+
+# 79.Write a program that checks if a given string is empty or not.
+# a =""
+# if a.isempty():
+#     print("Empty")
+# else:
+#     print("Not empty")
+
+# 80. Write a program that checks if a given number lies between 1 and 100 (inclusive).
+a = 101
+if 101>a>0:
+    print("lies between 1-100, Inclusive")
+else:
+    print("Doesn't lies between 1-100")
+# 81. Write a program that checks whether a given string contains the word "python" (case insensitive).
+a = "pythoin"
+if a == "python":
+    print("string contains the word python")
+else:
+    print("contains the word python")
+# 82. Write a program that takes a number and prints "Small" if <10, "Medium" if between 10 and 50, "Large" if >50.
