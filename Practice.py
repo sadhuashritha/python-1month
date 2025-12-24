@@ -644,10 +644,17 @@ if 101>a>0:
     print("lies between 1-100, Inclusive")
 else:
     print("Doesn't lies between 1-100")
-# 81. Write a program that checks whether a given string contains the word "python" (case insensitive).
-a = "pythoin"
-if a == "python":
-    print("string contains the word python")
-else:
-    print("contains the word python")
+# # 81. Write a program that checks whether a given string contains the word "python" (case insensitive).
+# a = "pythoin"
+# if a == "python":
+#     print("string contains the word python")
+# else:
+#     print("contains the word python")
 # 82. Write a program that takes a number and prints "Small" if <10, "Medium" if between 10 and 50, "Large" if >50.
+a = 200
+if a < 10:
+    print("Small")
+elif 10 >= a >= 50:
+    print("Medium")
+else:
+    print("Large")
