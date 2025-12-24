@@ -683,6 +683,6 @@ elif n == 3:
     c = a *  b 
     print(c)
 else:
-    n = a / b 
+    n = a // b 
     print(c)
 
