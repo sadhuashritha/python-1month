@@ -658,3 +658,31 @@ elif 10 >= a >= 50:
     print("Medium")
 else:
     print("Large")
+
+# 83. Write a menu-driven program using if-elif that performs addition, subtraction, multiplication, and division based on user choice.
+n = int(input("Enter a number 1/2/3/4"))
+a = 5
+b = 9
+match n:
+    case 1:
+        print("Addition")
+    case 2:
+        print("Subtraction")
+    case 3:
+        print("Multiplication")
+    case 4:
+        print("Division")
+
+if n == 1:
+   c = a + b 
+   print(c)
+elif n == 2:
+    c = a - b 
+    print(c)
+elif n == 3:
+    c = a *  b 
+    print(c)
+else:
+    n = a / b 
+    print(c)
+
