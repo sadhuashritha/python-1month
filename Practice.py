@@ -623,3 +623,10 @@ if b in "aeiou":
 else:
     print("Consonant")
 # 78.Write a program that checks if a character is uppercase, lowercase, digit, or special character.
+a = "@"
+if a.isalpha():
+    print("Alphabet")
+elif a.isdigit():
+    print("Digit")
+else:
+    print("Special Character")
