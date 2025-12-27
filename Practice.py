@@ -686,4 +686,7 @@ else:
     n = a // b 
     print(c)
 
-
+# 84. Write a program that reads two angles of a triangle and checks if the third angle is valid (sum must be 180).
+a = 10
+b = 100
+c = 70
