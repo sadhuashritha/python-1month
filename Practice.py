@@ -690,3 +690,17 @@ else:
 a = 10
 b = 100
 c = 70
+
+# 85 Write a program to check if three lengths can form a valid triangle.
+a = 10
+b = 70
+c = 100
+if a + b > c and b + c > a and c + a > b:
+    print("Valid Triangle")
+else:
+    print("Not a Valid Triangle")
+# 86 Write a program that checks if a number is a multiple of 2 or 3 but not both.
+# 87 Write a program that checks if a given year is a century year (like 1900, 2000) or not.
+# 88 Write a program that determines the type of triangle (equilateral, isosceles, scalene) based on side lengths.
+# 89 Write a program that checks whether a string starts with "Hello" using an if condition.
+# 90 Write a program to implement a simple login check: compare input username and password with stored ones.
