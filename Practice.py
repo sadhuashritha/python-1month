@@ -700,6 +700,7 @@ if a + b > c and b + c > a and c + a > b:
 else:
     print("Not a Valid Triangle")
 # 86 Write a program that checks if a number is a multiple of 2 or 3 but not both.
+
 # 87 Write a program that checks if a given year is a century year (like 1900, 2000) or not.
 # 88 Write a program that determines the type of triangle (equilateral, isosceles, scalene) based on side lengths.
 # 89 Write a program that checks whether a string starts with "Hello" using an if condition.
