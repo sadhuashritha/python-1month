@@ -67,5 +67,29 @@ class Solution:
         sum += ans[-1]
         return sum
     
+# 43. Multiply Strings
+class Solution:
+    def multiply(self, num1: str, num2: str) -> str:
+        num3 = int(num1)
+        num4 = int(num2)
+        ans = str(num3 * num4)
+        return ans
+
+# 349. Intersection of Two Arrays
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        ans = []
+        # for i in range(len(nums1)):
+        #     for j in range(len(nums2)):
+        #         if nums1[i] == nums2[j]:
+        #             if nums1[i] not in ans:
+        #                 ans.append(nums1[i])
+        # return ans
+        nums3 = set(nums1)
+        nums4 = set(nums2)
+        for i in nums3:
+            if i in nums4:
+                ans.append(i)
+        return ans
 
     
