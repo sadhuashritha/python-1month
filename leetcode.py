@@ -92,4 +92,18 @@ class Solution:
                 ans.append(i)
         return ans
 
-    
+# 1678. Goal Parser Interpretation
+class Solution:
+    def interpret(self, command: str) -> str:
+        # ans = list(command)
+        # for i in range(len(ans)):
+        #     if ans[i] == "G":
+        #         ans[i] = "G"
+        #     elif ans[i] == "()":
+        #         ans[i] = "o"
+        #     elif ans[i] == "(al)":
+        #         ans[i] = "al"
+        # return str(ans)
+        command = command.replace("()","o")
+        command = command.replace("(al)","al")
+        return command
