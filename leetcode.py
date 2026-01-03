@@ -134,10 +134,3 @@ class Solution:
                 return i
         return len(nums)
 
-# 35. Search Insert Position
-class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
-        for i in range(len(nums)):
-            if nums[i] >= target:
-                return i
-        return len(nums)
