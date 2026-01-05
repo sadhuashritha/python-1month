@@ -191,6 +191,26 @@ while num >= 10:
     num += sumdi
 print(num)
 
+# 1089. Duplicate Zeros
+class Solution:
+    def duplicateZeros(self, arr: List[int]) -> None:
+        """
+        Do not return anything, modify arr in-place instead.
+        """
+        arr1 = []
+        for i in range(len(arr)):
+            if len(arr1) > len(arr):
+                break
+            elif arr[i] == 0:
+                arr1.append(0) 
+                if len(arr1) < len(arr):
+                    arr1.append(0)
+            else:
+                arr1.append(arr[i])
+        
+
+        for i in range(len(arr)):
+            arr[i] = arr1[i]
 
 
 
