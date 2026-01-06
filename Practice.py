@@ -705,3 +705,7 @@ else:
 # 88 Write a program that determines the type of triangle (equilateral, isosceles, scalene) based on side lengths.
 # 89 Write a program that checks whether a string starts with "Hello" using an if condition.
 # 90 Write a program to implement a simple login check: compare input username and password with stored ones.
+import sys
+values = [1,2,3,4,5]
+size_in_bytes = sum(sys.getsizeof(item) for item in values)/sys.getsizeof(values[0])
+print(size_in_bytes)
