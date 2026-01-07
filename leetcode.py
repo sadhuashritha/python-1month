@@ -134,3 +134,18 @@ class Solution:
                 return i
         return len(nums)
 
+# 217. Contains Duplicate
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        # nums.sort()
+        # for i in range(len(nums)-1):
+        #     if nums[i] == nums[i+1]:
+        #         return True
+        #         break
+        # return False
+        arr = set(nums)
+        if len(nums) != len(arr):
+            return True
+        else:
+            return False
+         
