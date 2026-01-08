@@ -163,3 +163,17 @@ class Solution:
         s = ''.join(sorted(s))
         t = ''.join(sorted(t))
         return s==t
+
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        if len(strs) == 0:
+            return [[""]]
+        ans = {}
+        for i in range(len(strs)):
+            res = ''.join(sorted(strs[i]))
+            if res in ans:
+                ans[res].append(strs[i])
+            else:
+                ans[res] = [strs[i]]
+
+        return list(ans.values())
