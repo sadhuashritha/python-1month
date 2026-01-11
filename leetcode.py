@@ -195,3 +195,30 @@ class Solution:
         for key,value in d.items():
             if value > (n/2):
                 return key
+            
+
+# 121. Best Time to Buy and Sell Stock
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        sum = 0
+        min = prices[0]
+        for i in range(len(prices)):
+            n = prices[i] - min
+            if n > sum:
+                sum = n
+            if prices[i] < min:
+                min = prices[i]
+        return sum
+
+
+#  1281. Subtract the Product and Sum of Digits of an Integer
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        n1 = str(n)
+        p = 1
+        s = 0
+        for i in range(len(n1)):
+            p *= int(n1[i])
+            s += int(n1[i])
+        ans = p - s
+        return ans 
