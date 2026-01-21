@@ -93,16 +93,22 @@ a = list(s)
 b = list(t)
 a.sort()
 b.sort()
-c = "".join(a)
-d = "".join(b)
+# c = "".join(a)
+# d = "".join(b)
 
 # a = "".join(sorted(s))
 # b = "".join(sorted(t))
-if c == d:
+if a == b:
     print("Anagram")
 else:
     print("Not an Anagram")
 
+# Factorial
+a = 5
+sum = 1
+for i in range(1,a+1):
+    sum *= i
+print(sum)
 
 
 
