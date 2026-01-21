@@ -84,5 +84,26 @@ for i in range(len(a)):
         b.append(a[i])
 print(b)
 
+#  Valid Anagram
+s = "anagrau"
+t = "nagarau"
+if len(s) != len(t):
+    print("Not Anagram")
+a = list(s)
+b = list(t)
+a.sort()
+b.sort()
+c = "".join(a)
+d = "".join(b)
+
+# a = "".join(sorted(s))
+# b = "".join(sorted(t))
+if c == d:
+    print("Anagram")
+else:
+    print("Not an Anagram")
+
+
+
 
 
