@@ -26,3 +26,23 @@ if a == a[::-1]:
     print("Palindrome")
 else:
     print("Not a Palindrome")
+
+# Armstrong number
+n = 1234
+num = list(str(n))
+size = len(num)
+a = []
+for i in range(len(num)):
+    a.append(int(num[i]) ** size)
+sum = 0
+for i in range(len(a)):
+    sum += a[i]
+print(sum)
+
+
+
+
+
+
+
+
