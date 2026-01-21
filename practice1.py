@@ -73,8 +73,16 @@ print(ans)
 
 # Second largest in array
 a = [1,4,3,7,8]
-a.sort()
+a.sort(reverse = True)
 print(a[1])
+
+# Remove duplicates
+a = [1,4,5,7,2,1,4]
+b = []
+for i in range(len(a)):
+    if a[i] not in b:
+        b.append(a[i])
+print(b)
 
 
 
