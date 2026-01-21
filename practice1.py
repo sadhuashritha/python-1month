@@ -41,7 +41,25 @@ print(sum)
 
 
 
+# Reverse string
+a = "ashritha"
+b = list(a)
+c = ""
+for i in range(len(b)-1,-1,-1):
+    c += b[i]
+print(c)
 
+
+a = "ashritha"
+b = list(a)
+p1 = 0
+p2 = len(b)-1
+while p1 < p2:
+    b[p1],b[p2] = b[p2],b[p1]
+    p1+=1
+    p2-=1
+c = "".join(b)
+print(c)
 
 
 
