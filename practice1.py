@@ -61,6 +61,20 @@ while p1 < p2:
 c = "".join(b)
 print(c)
 
+s = ["h","e","l","l","o"]
+c = ""
+for i in range(len(s)-1,-1,-1):
+    c+=s[i]
+print(list(c))
+
+a = "ashritha"
+ans = a[::-1]
+print(ans)
+
+# Second largest in array
+a = [1,4,3,7,8]
+a.sort()
+print(a[1])
 
 
 
