@@ -103,12 +103,6 @@ if a == b:
 else:
     print("Not an Anagram")
 
-# Factorial
-a = 5
-sum = 1
-for i in range(1,a+1):
-    sum *= i
-print(sum)
 
 # Character frequency
 a = [1,3,4,2,3,1,3,1]
@@ -146,6 +140,12 @@ for i in range(len(arr)):
 print(Even)
 print(Odd)
 
+# Factorial
+a = 5
+sum = 1
+for i in range(1,a+1):
+    sum *= i
+print(sum)
     
 
 
