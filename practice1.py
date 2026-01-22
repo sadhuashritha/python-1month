@@ -133,7 +133,18 @@ for i in range(len(arr)):
 if not found:
     print("Not found")
 
-    
+
+# Even odd separation
+arr = [1, 2, 3, 4, 5, 6]
+Even = []
+Odd = []
+for i in range(len(arr)):
+    if arr[i] % 2 == 0:
+        Even.append(arr[i])
+    else:
+        Odd.append(arr[i])
+print(Even)
+print(Odd)
 
     
 
