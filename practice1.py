@@ -110,6 +110,16 @@ for i in range(1,a+1):
     sum *= i
 print(sum)
 
+# Character frequency
+a = [1,3,4,2,3,1,3,1]
+d = {}
+for i in range(len(a)):
+    if a[i] not in d:
+        d[a[i]] = 1
+    else:
+        d[a[i]] += 1
+print(d)
+
 
 
 
