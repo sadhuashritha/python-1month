@@ -28,7 +28,7 @@ else:
     print("Not a Palindrome")
 
 # Armstrong number
-n = 1234
+n = 153
 num = list(str(n))
 size = len(num)
 a = []
@@ -37,7 +37,11 @@ for i in range(len(num)):
 sum = 0
 for i in range(len(a)):
     sum += a[i]
-print(sum)
+
+if sum == n:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
 
 
 
@@ -146,7 +150,9 @@ sum = 1
 for i in range(1,a+1):
     sum *= i
 print(sum)
-    
+
+
+# 
 
 
 
