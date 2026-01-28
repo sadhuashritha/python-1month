@@ -27,21 +27,6 @@ if a == a[::-1]:
 else:
     print("Not a Palindrome")
 
-# Armstrong number
-n = 153
-num = list(str(n))
-size = len(num)
-a = []
-for i in range(len(num)):
-    a.append(int(num[i]) ** size)
-sum = 0
-for i in range(len(a)):
-    sum += a[i]
-
-if sum == n:
-    print("Armstrong Number")
-else:
-    print("Not an Armstrong Number")
 
 
 
@@ -188,6 +173,21 @@ for i in range(len(a)):
         d[ans] = a[i]
 
 
+# Armstrong number
+n = 153
+num = list(str(n))
+size = len(num)
+a = []
+for i in range(len(num)):
+    a.append(int(num[i]) ** size)
+sum = 0
+for i in range(len(a)):
+    sum += a[i]
+
+if sum == n:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
 
 
 
