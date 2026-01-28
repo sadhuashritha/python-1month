@@ -189,6 +189,16 @@ if sum == n:
 else:
     print("Not an Armstrong Number")
 
-
+# Fibonacci series
+n = 10
+a = 0
+b = 1
+print(a,end=" ")
+for i in range(0,n+1):
+    print(b,end=" ")
+    a,b = b,a+b  #0,1,1,2...
+# a,b = b,a+b
+# 0,1 => 1,1
+# 1,1 => 1,2...
 
 
