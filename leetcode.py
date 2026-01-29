@@ -252,14 +252,3 @@ class Solution:
         else:
             return False
         
-# 152. Maximum Product Subarray
-class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
-        ans = nums[0]
-        for i in range(len(nums)):
-            mul = 1
-            for j in range(i,len(nums)):
-                mul *= nums[j]
-                if ans < mul:
-                    ans = mul
-        return ans
