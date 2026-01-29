@@ -252,3 +252,22 @@ class Solution:
         else:
             return False
         
+# 152. Maximum Product Subarray
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        ans = nums[0]
+        for i in range(len(nums)):
+            mul = 1
+            for j in range(i,len(nums)):
+                mul *= nums[j]
+                if ans < mul:
+                    ans = mul
+        return ans
+
+# 2283. Check if Number Has Equal Digit Count and Digit Valueclass Solution:
+    def digitCount(self, num: str) -> bool:
+        for i in range(len(num)):
+            if int(num[i]) != num.count(str(i)):
+                return False
+        return True
+
