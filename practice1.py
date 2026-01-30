@@ -193,8 +193,7 @@ print()#0,1,1,2...
 # 0,1 => 1,1
 # 1,1 => 1,2...
 
-# Reverse the given array in place using two pointers without using extra space.
-
+# 1. Reverse the given array in place using two pointers without using extra space.
 arr = [5,6,7,8,9]
 p1 = 0
 p2 = len(arr)-1
@@ -203,3 +202,19 @@ while p1 < p2:
     p1 += 1
     p2 -= 1
 print(arr)
+
+# 2. Check Whether an Array Is Palindrome
+arr = [1,2,3,2,1]
+if arr == arr[::-1]:
+    print("Palindromic Array")
+else:
+    print("Not a Palindromic Array")
+
+# 3. Find a Pair with Given Sum in Sorted Array
+arr = [8,9,2,7,1,3]
+sum = 9
+for i in range(len(arr)):
+    for j in range(i+1,len(arr)):
+        res = arr[i] + arr[j] 
+        if res == sum:
+            print(arr[i],arr[j],"Pair Found")
