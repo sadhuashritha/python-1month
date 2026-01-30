@@ -245,8 +245,47 @@ for i in range(len(arr)):
             count+=1
 print("No.of pairs less than k: ",count)
 
-# 6. Remove Duplicates from Sorted Array
+# 6. Remove Duplicates from Sorted Array using two pointers
 arr = [1, 1, 2, 2, 3, 4, 4]
+# p1 = 1
+# p2 = p1 + 1
+# for i in range(len(arr)):
+#     if arr[p1] == arr[p2]:
+#         arr.pop(i)
+    
+#     p1 += 1
+print(list(set(arr)))
+print(arr)   
+
+# 7. Squares of a Sorted Array
+# Return a new array of squares of each number sorted in non-decreasing order.
+arr = [-4, -1, 0, 3, 10]
+for i in range(len(arr)):
+    squa = arr[i]**2
+    arr[i] = squa
+print(arr)
+print(sorted(arr))
+print()
+
+# 8. Find a Triplet with Given Sum
+#  Check whether any three elements in the array sum up to a given target.
+arr = [1, 2, 4, 5, 6]
+target = 10 
+arr.sort()
+for i in range(len(arr)-2):
+    p1 = i+1
+    p2 = len(arr) - 1
+    while p1 < p2:
+        sum = arr[i] + arr[p1] + arr[p2]
+        if sum == target:
+            print((arr[i],arr[p1],arr[p2]))
+            break
+        elif sum < target:
+            p1 += 1
+        else:
+            p2 -= 1
+
+
 
 
 
