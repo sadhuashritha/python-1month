@@ -163,15 +163,6 @@ print(sum)
 # Suppose the following input is supplied to the program: 8 Then, the output should be: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 # Hints: In case of input data being supplied to the question, it should be assumed to be a console input. Consider use dict()
 
-a = ["tan","can","eat","ate","man","bat"]
-d = {}
-for i in range(len(a)):
-    ans = "".join(sorted(a[i]))
-    if ans not in d:    
-        d[ans].append(a[i])
-    else:
-        d[ans] = a[i]
-
 
 # Armstrong number
 n = 153
@@ -196,9 +187,19 @@ b = 1
 print(a,end=" ")
 for i in range(0,n+1):
     print(b,end=" ")
-    a,b = b,a+b  #0,1,1,2...
+    a,b = b,a+b  
+print()#0,1,1,2...
 # a,b = b,a+b
 # 0,1 => 1,1
 # 1,1 => 1,2...
 
+# Reverse the given array in place using two pointers without using extra space.
 
+arr = [5,6,7,8,9]
+p1 = 0
+p2 = len(arr)-1
+while p1 < p2:
+    arr[p1],arr[p2] = arr[p2],arr[p1]
+    p1 += 1
+    p2 -= 1
+print(arr)
