@@ -218,3 +218,37 @@ for i in range(len(arr)):
         res = arr[i] + arr[j] 
         if res == sum:
             print(arr[i],arr[j],"Pair Found")
+
+# 4. Move All Zeros to End
+arr = [0, 1, 0, 3, 12]
+arr1 = []
+count = 0
+for i in range(len(arr)):
+    if arr[i] != 0:
+        arr1.append(arr[i])
+    else:
+        count += 1
+while count > 0:
+    arr1.append(0)
+    count -= 1
+print(arr1)
+# arr1.append([0] * count)
+
+# 5.Count Pairs with Sum Less Than K
+arr = [1, 2, 3, 4, 5]
+k = 7
+count = 0
+for i in range(len(arr)):
+    for j in range(i+1,len(arr)):
+        ans = arr[i] + arr[j]
+        if ans < k:
+            count+=1
+print("No.of pairs less than k: ",count)
+
+# 6. Remove Duplicates from Sorted Array
+arr = [1, 1, 2, 2, 3, 4, 4]
+
+
+
+
+
