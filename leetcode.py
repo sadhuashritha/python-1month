@@ -279,3 +279,15 @@ class Solution:
             return "a" * n
         else:
             return "a" * (n-1) + "b"
+
+# 434. Number of Segments in a String
+class Solution:
+    def countSegments(self, s: str) -> int:
+        s1 = s.split()
+        # return len(s1)
+        count = 0
+        for i in range(len(s1)):
+            count += 1
+        return count
+    
+
