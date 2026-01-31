@@ -290,4 +290,28 @@ class Solution:
             count += 1
         return count
     
+# 657. Robot Return to Origin
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        # x = 0
+        # y = 0
+        # for i in moves:
+        #     if i == "U":
+        #         y += 1
+        #     elif i == "D":
+        #         y -= 1
+        #     elif i == "L":
+        #         x -= 1
+        #     else:
+        #         x += 1
+        # return  x == 0 and y == 0
+        for i in moves:
+            left = moves.count("L")
+            right = moves.count("R")
+            up = moves.count("U")
+            down = moves.count("D")
 
+            if left == right and up == down:
+                return True
+            else:
+                return False
