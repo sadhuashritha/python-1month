@@ -315,3 +315,16 @@ class Solution:
                 return True
             else:
                 return False
+            
+# 26. Remove Duplicates from Sorted Array
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        res = []
+        for i in range(len(nums)):
+            if nums[i] not in res:
+                res.append(nums[i])
+
+        for i in range(len(res)):
+            nums[i] = res[i]
+        return len(res)
+        
