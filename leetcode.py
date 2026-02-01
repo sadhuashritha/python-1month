@@ -338,3 +338,12 @@ class Solution:
                     count += 1      
         return count
 
+# 66. Plus One
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        result  = "".join(map(str,digits)) # result = 123 --> string
+        result = int(result) + 1 # result -> int + 1
+        ans = list(map(int,str(result))) # result -> map(int, "1234")
+        return ans
+
+    
