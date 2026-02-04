@@ -286,26 +286,5 @@ for i in range(len(arr)-2):
             p2 -= 1
 
 
-# Sort an Array of 0s, 1s, and 2s
-# Description: Sort the array containing only 0s, 1s, and 2s using the Dutch National Flag
-# algorithm
 
-arr = [2, 0, 2, 1, 1, 0]
-p1 = 0
-p2 = len(arr)-1
-while p1 < p2:
-    if arr[p1] < arr[p2]:
-        arr[p1],arr[p2] = arr[p2],arr[p1]
-        p1 += 1
-    elif p1 > p2:
-        arr[p2],arr[p1] = arr[p1],arr[p2]
-        p1 -= 1
-print(arr)
 # 
-
-
-
-
-
-
-
