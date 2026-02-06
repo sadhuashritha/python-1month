@@ -377,3 +377,19 @@ class Solution:
                 p1 += 1
 
 
+# 167. Two Sum II - Input Array Is Sorted
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left = 0
+        right = len(numbers) - 1
+
+        while left < right:
+            s = numbers[left] + numbers[right] 
+            if s == target and left != right:
+                return (left +1,right+1)
+            elif s < target:
+                left += 1
+            else:
+                right -= 1
+
+
