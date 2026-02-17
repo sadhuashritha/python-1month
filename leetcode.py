@@ -430,3 +430,10 @@ class Solution:
         else:
             return "scalene"
         
+# Reverse Bits
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        bits = format(n,'032b')
+        bit = bits[::-1]
+        return int(bit,2)
+         
