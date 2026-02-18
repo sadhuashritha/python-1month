@@ -472,3 +472,24 @@ class Solution:
             if i.islower() and i.upper() in s:
                 count += 1
         return count
+    
+# 961. N-Repeated Element in Size 2N Array
+
+class Solution:
+    def repeatedNTimes(self, nums: List[int]) -> int:
+        a = set()
+        for i in nums:
+            if i in a:
+                return i
+            else:
+                a.add(i)
+        # d = {}
+        # for i in nums:
+        #     if i not in d:
+        #         d[i] = 1
+        #     else:
+        #         d[i] += 1
+
+        # ans = max(d, key= d.get)
+        # return ans
+        
