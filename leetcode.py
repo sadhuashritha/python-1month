@@ -498,3 +498,12 @@ class Solution:
     def hammingWeight(self, n: int) -> int:
         bits = bin(n)[2:]
         return bits.count("1")
+    
+# Score of a String
+class Solution:
+    def scoreOfString(self, s: str) -> int:
+        sum = 0
+        for i in range(len(s)-1):
+            n = abs(ord(s[i]) - ord(s[i+1]))
+            sum += n 
+        return sum
