@@ -493,3 +493,8 @@ class Solution:
         # ans = max(d, key= d.get)
         # return ans
         
+# Number of 1 Bits
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        bits = bin(n)[2:]
+        return bits.count("1")
