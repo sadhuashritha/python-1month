@@ -507,3 +507,23 @@ class Solution:
             n = abs(ord(s[i]) - ord(s[i+1]))
             sum += n 
         return sum
+    
+# N-Repeated Element in Size 2N Array
+class Solution:
+    def repeatedNTimes(self, nums: List[int]) -> int:
+        a = set()
+        for i in nums:
+            if i in a:
+                return i
+            else:
+                a.add(i)
+        # d = {}
+        # for i in nums:
+        #     if i not in d:
+        #         d[i] = 1
+        #     else:
+        #         d[i] += 1
+
+        # ans = max(d, key= d.get)
+        # return ans
+        
