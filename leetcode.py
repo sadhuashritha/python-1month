@@ -567,4 +567,12 @@ class Solution:
         ans = max(dic, key = dic.get)
         return ans
 
+# Missing Number
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        n = len(nums)
+        ans = n * (n + 1) // 2
+        ans1 = sum(nums)
+        ans2 = ans - ans1
+        return ans2
         
