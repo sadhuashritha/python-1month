@@ -553,3 +553,18 @@ class Solution:
                 p1 += 1
                 p2 -=1
         return "".join(s)
+
+# Find the Duplicate Number
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        dic = {}
+        for i in nums:
+            if i in dic:
+                dic[i] += 1
+            else:
+                dic[i] = 1
+
+        ans = max(dic, key = dic.get)
+        return ans
+
+        
