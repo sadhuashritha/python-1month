@@ -576,3 +576,12 @@ class Solution:
         ans2 = ans - ans1
         return ans2
         
+# Kth Missing Positive Number
+class Solution:
+    def findKthPositive(self, arr: List[int], k: int) -> int:
+        arr1 = []
+        for i in range(3000):
+            if i not in arr:
+                arr1.append(i)
+
+        return arr1[k]
