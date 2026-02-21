@@ -586,17 +586,4 @@ class Solution:
 
         return arr1[k]
 
-# Missing Number
-class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        # n = len(nums)
-        # ans = n * (n + 1) // 2
-        # ans1 = sum(nums)
-        # ans2 = ans - ans1
-        # return ans2
-        n = len(nums) + 1
-        for i in range(0,n):
-            if i not in nums:
-                return i
-                break
         
