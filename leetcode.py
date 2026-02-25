@@ -609,3 +609,9 @@ class Solution:
                 return False
         return True
         
+# 3794. Reverse String Prefix
+class Solution:
+    def reversePrefix(self, s: str, k: int) -> str:
+        s1 = s[:k][::-1]
+        s2 = s[k:len(s)]
+        return s1 + s2
