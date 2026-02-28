@@ -622,3 +622,20 @@ class Solution:
         nums.sort(reverse= True)
         ans = (nums[0]-1)*(nums[1]-1)
         return ans
+# 3005. Count Elements With Maximum Frequency
+class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        d = {} 
+        for i in range(len(nums)):
+            if nums[i] in d:
+                d[nums[i]] += 1
+            else:
+                d[nums[i]] = 1
+
+        max_n = max(d.values())
+
+        count = 0
+        for value in d.values():
+            if value == max_n:
+                count += value
+        return count
