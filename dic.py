@@ -192,7 +192,6 @@ for i,j in freq.items():
         break
     else:
         print(-1)
-
 # or
 
 # freq = Counter(s)

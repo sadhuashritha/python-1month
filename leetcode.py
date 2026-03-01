@@ -640,6 +640,7 @@ class Solution:
                 count += value
         return count
 
+
 # 3731. Find Missing Elements
 class Solution:
     def findMissingElements(self, nums: List[int]) -> List[int]:
@@ -649,4 +650,16 @@ class Solution:
         for i in range(m,n+1):
             if i not in nums:
                 s.append(i)
+        return s
+    
+
+# Find All Numbers Disappeared in an Array
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        num = set(nums)
+        s = []
+        for i in range(1,len(nums)+1):
+            if i not in num:
+                s.append(i)
+
         return s
