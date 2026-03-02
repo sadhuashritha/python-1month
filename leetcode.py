@@ -653,13 +653,4 @@ class Solution:
         return s
     
 
-# Find All Numbers Disappeared in an Array
-class Solution:
-    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
-        num = set(nums)
-        s = []
-        for i in range(1,len(nums)+1):
-            if i not in num:
-                s.append(i)
 
-        return s
