@@ -673,3 +673,21 @@ class Solution:
             if age > 60:
                 count += 1
         return count
+
+# 2710. Remove Trailing Zeros From a String
+class Solution:
+    def removeTrailingZeros(self, num: str) -> str:
+        # count = 0
+        # for i in range(len(num)-1,-1,-1):
+        #     if num[i] == '0':
+        #         count += 1
+        #     else:
+        #         break
+
+        # while count > 0:
+        #     num = num[:-1]
+        #     count -= 1
+
+        # return num
+        return num.rstrip('0')
+
