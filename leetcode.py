@@ -715,3 +715,36 @@ class Solution:
                 count2 += 1
         return count1 == count2
 
+# Backspace String Compare
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+        stack = []
+        stack1 = []
+        for i in s:
+            if i != "#":
+                stack.append(i)
+            elif stack and i == "#":
+                stack.pop()
+        for i in t:
+            if i != "#":
+                stack1.append(i)
+            elif stack1 and i == "#":
+                stack1.pop()
+        s = "".join(stack)
+        t = "".join(stack1)
+        return s == t            
+
+
+# Max Consecutive Ones
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        maxi = 0
+        count = 0
+        for i in nums:
+            if i == 1:
+                count += 1
+            else:
+                maxi = max(maxi,count)
+                count = 0
+        maxi = max(maxi,count)
+        return maxi
