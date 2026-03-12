@@ -769,3 +769,14 @@ class Solution:
         if len(nums) < 3:
             return nums[0]
         return nums[2]
+
+# 1812. Determine Color of a Chessboard Square
+class Solution:
+    def squareIsWhite(self, coordinates: str) -> bool:
+        x = ord(coordinates[0])
+        y = int(coordinates[1])
+        z = x + y
+        if z % 2 == 0:
+            return False
+        return True
+            
