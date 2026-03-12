@@ -748,3 +748,15 @@ class Solution:
                 count = 0
         maxi = max(maxi,count)
         return maxi
+
+# 2733. Neither Minimum nor Maximum
+class Solution:
+    def findNonMinOrMax(self, nums: List[int]) -> int:
+        if len(nums) == 2 or len(nums) == 1:
+            return -1
+        mini = min(nums)
+        maxi = max(nums)
+
+        for i in nums:
+            if i != mini and i != maxi:
+                return i
