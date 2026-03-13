@@ -779,4 +779,13 @@ class Solution:
         if z % 2 == 0:
             return False
         return True
-            
+
+
+# 3065. Minimum Operations to Exceed Threshold Value I
+class Solution:
+    def minOperations(self, nums: List[int], k: int) -> int:
+        count = 0
+        for i in nums:
+            if i < k:
+                count += 1
+        return count
