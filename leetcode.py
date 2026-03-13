@@ -789,3 +789,11 @@ class Solution:
             if i < k:
                 count += 1
         return count
+
+
+# 3536. Maximum Product of Two Digits
+class Solution:
+    def maxProduct(self, n: int) -> int:
+        nums = list(map(int,str(n)))
+        nums.sort()
+        return nums[-1] * nums[-2]
