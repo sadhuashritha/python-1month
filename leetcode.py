@@ -809,4 +809,17 @@ class Solution:
         return False
 
 
- 
+ # 1413. Minimum Value to Get Positive Step by Step Sum
+class Solution:
+    def minStartValue(self, nums: List[int]) -> int:
+        # prefix = [0] * len(nums)
+        # prefix[0] = nums[0]
+        # for i in range(1,len(nums)):
+        #     prefix[i] = prefix[i-1] + nums[i]
+        # mini = min(prefix)
+        prefix = 0
+        mini = 0
+        for i in nums:
+            prefix += i
+            mini = min(mini,prefix)
+        return max(1,1-(mini))
